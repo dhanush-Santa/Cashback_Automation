@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.santabrowser.cashback</groupId>
+    <artifactId>cashback</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>cashback</name>
+    <description>UI and API Test Automation Framework — Selenium + REST Assured + TestNG</description>
+
+    <!-- ─────────────────────────────────────────
+         GLOBAL PROPERTIES
+         ───────────────────────────────────────── -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+
+        <!-- Dependency versions — change here, applies everywhere -->
+        <selenium.version>4.21.0</selenium.version>
+        <webdrivermanager.version>5.9.1</webdrivermanager.version>
+        <testng.version>7.10.2</testng.version>
+        <rest-assured.version>5.4.0</rest-assured.version>
+        <jackson.version>2.17.1</jackson.version>
+        <allure.version>2.27.0</allure.version>
+        <slf4j.version>2.0.13</slf4j.version>
+        <logback.version>1.5.6</logback.version>
+        <assertj.version>3.26.0</assertj.version>
+        <faker.version>1.0.2</faker.version>
+        <owner.version>1.0.12</owner.version>
+    </properties>
+
+    <!-- ─────────────────────────────────────────
+         DEPENDENCY MANAGEMENT (BOM-style pinning)
+         ───────────────────────────────────────── -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Allure BOM — keeps all allure modules in sync -->
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-bom</artifactId>
+                <version>${allure.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!-- ══════════════════════════════════════════
+             UI AUTOMATION — Selenium WebDriver
+             ══════════════════════════════════════════ -->
+
+        <!-- Core Selenium WebDriver — browser automation (Chrome, Firefox, Edge, Safari) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- WebDriverManager — auto-downloads & configures the right browser driver binary -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             API AUTOMATION — REST Assured
+             ══════════════════════════════════════════ -->
+
+        <!-- REST Assured core — fluent HTTP client for API testing (GET/POST/PUT/DELETE/PATCH) -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+        </dependency>
+
+        <!-- JSON Schema Validation — validate API response bodies against a JSON schema -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${rest-assured.version}</version>
+        </dependency>
+
+        <!-- XML/SOAP support for REST Assured — useful if any endpoints return XML -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>xml-path</artifactId>
+            <version>${rest-assured.version}</version>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             JSON / POJO SERIALIZATION — Jackson
+             ══════════════════════════════════════════ -->
+
+        <!-- Jackson Databind — serialize/deserialize Java POJOs ↔ JSON for API payloads -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- Jackson Java 8 time support — LocalDate, LocalDateTime in JSON -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             TEST RUNNER — TestNG
+             ══════════════════════════════════════════ -->
+
+        <!-- TestNG — annotation-driven test runner with parallel execution, grouping, and listeners -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- playwright -->
+<dependency>
+  <groupId>com.microsoft.playwright</groupId>
+  <artifactId>playwright</artifactId>
+  <version>1.59.0</version>
+</dependency>
+        <!-- ══════════════════════════════════════════
+             ASSERTIONS — AssertJ
+             ══════════════════════════════════════════ -->
+
+        <!-- AssertJ — fluent, readable assertions; better error messages than built-in asserts -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             REPORTING — Allure
+             ══════════════════════════════════════════ -->
+
+        <!-- Allure TestNG adapter — attaches screenshots, steps, and metadata to Allure reports -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Allure REST Assured adapter — logs request/response details directly into Allure reports -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             LOGGING — SLF4J + Logback
+             ══════════════════════════════════════════ -->
+
+        <!-- SLF4J API — logging facade; use in your own code for portability -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- Logback Classic — SLF4J implementation; configure via logback.xml -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             TEST DATA — Java Faker
+             ══════════════════════════════════════════ -->
+
+        <!-- Java Faker — generates realistic fake test data (names, emails, addresses, etc.) -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${faker.version}</version>
+        </dependency>
+
+        <!-- ══════════════════════════════════════════
+             CONFIG MANAGEMENT — Owner
+             ══════════════════════════════════════════ -->
+
+        <!-- Owner — type-safe config management; maps .properties files to Java interfaces -->
+        <!-- Use for base URLs, browser choice, environment toggles, credentials -->
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${owner.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ─────────────────────────────────────────
+         BUILD
+         ───────────────────────────────────────── -->
+    <build>
+        <plugins>
+
+            <!-- Compiler — enforce Java 17 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire — runs TestNG tests; reads testng.xml for suite config -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <!-- Point to your TestNG suite file -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!-- Allure agent — attaches to surefire for report generation -->
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar"
+                    </argLine>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.22</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <!-- Allure Maven — run `mvn allure:serve` to open the report locally -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.13.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
