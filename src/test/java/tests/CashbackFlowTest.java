@@ -13,27 +13,72 @@ import java.util.List;
 
 public class CashbackFlowTest extends BaseTest {
 
-
-
-
-
     @Test
     public void cashback_homepage_test() throws InterruptedException {
 
         // ── 1. Open home page ──────────────────────────────────────────────────
         HomePage homePage = new HomePage(page);
         homePage.open();
-
         page.waitForLoadState();
-
-        Assertions.assertThat(page.url())
-                .as("Home page URL should contain a uuid parameter")
-                .contains("uuid=");
+        assertHomePageLoaded();
 
         // ── 2. Open Menu → All Categories ──────────────────────────────────────
         homePage.clickMenu();
         AllCategoriesPage allCategoriesPage = homePage.clickAllCategories();
+        assertAllCategoriesPageLoaded();
 
+        // ── 3. Search brand → assert results → then click ──────────────────────
+        String brandName = allCategoriesPage.getBrandName();
+        allCategoriesPage.enterSearchText(brandName);
+        assertSearchResultsVisible();
+        assertSearchResultCount();
+        allCategoriesPage.validateSearchResults(brandName);
+        allCategoriesPage.clickFirstSearchResult();
+        BrandPage brandPage = new BrandPage(page);
+
+        // ── 4. Activate cashback → opens external page → close it ───────────────
+        brandPage.activateCashbackAndClose(context, 5000);
+        assertExternalPageClosed();
+
+        // ── 5. Expand cashback rates (twice) ────────────────────────────────────
+        brandPage.expandCashbackRates();
+        brandPage.expandCashbackRates();
+        assertExpandCashbackRatesButtonVisible();
+
+        // ── 6. Close the brand popup ────────────────────────────────────────────
+        brandPage.closeBrandPopup();
+        assertBrandPopupClosed();
+
+        // ── 7. Click Popular filter ─────────────────────────────────────────────
+        allCategoriesPage.clickPopularFilter();
+        assertPopularFilterCampaignsVisible();
+
+        // ── 8. Click A-Z filter and validate sort order ─────────────────────────
+        allCategoriesPage.clickAToZFilter();
+        List<String> names = allCategoriesPage.A_Z_filter_getCampaignNames();
+        assertAToZSortOrder(names);
+        allCategoriesPage.clickAToZDropdown();
+
+        // ── 9. Click Cashback filter and validate descending rates ───────────────
+        allCategoriesPage.clickCashbackFilter();
+        List<String> rates = allCategoriesPage.cashback_filter_getCommissionRates();
+        assertCashbackDescendingOrder(rates);
+       allCategoriesPage.scrollDownCampaigns(page);
+
+        // ── 10. Go back ──────────────────────────────────────────────────────────
+        allCategoriesPage.clickBackButton();
+        assertBackOnHomePage();
+    }
+
+    // ── Assertion helpers ──────────────────────────────────────────────────────
+
+    private void assertHomePageLoaded() {
+        Assertions.assertThat(page.url())
+                .as("Home page URL should contain a uuid parameter")
+                .contains("uuid=");
+    }
+
+    private void assertAllCategoriesPageLoaded() {
         page.waitForSelector("//input[@placeholder='Search']",
                 new com.microsoft.playwright.Page.WaitForSelectorOptions()
                         .setState(WaitForSelectorState.VISIBLE)
@@ -42,40 +87,28 @@ public class CashbackFlowTest extends BaseTest {
         Assertions.assertThat(page.locator("//input[@placeholder='Search']").isVisible())
                 .as("Search input should be visible on All Categories page")
                 .isTrue();
+    }
 
-        // ── 3. Search brand → assert results → then click ──────────────────────
-        String brandName = allCategoriesPage.getBrandName();
-        allCategoriesPage.enterSearchText(brandName);
-
-        // Wait for results to appear BEFORE clicking
+    private void assertSearchResultsVisible() {
         page.waitForSelector(".search_result_item",
                 new com.microsoft.playwright.Page.WaitForSelectorOptions()
                         .setState(WaitForSelectorState.VISIBLE)
                         .setTimeout(10000));
+    }
 
-        // Assert result count while results are still on screen
+    private void assertSearchResultCount() {
         Assertions.assertThat(page.locator(".search_result_item").count())
                 .as("At least one search result should appear for 'myn'")
                 .isGreaterThan(0);
+    }
 
-        // Validate brand name appears in results
-        allCategoriesPage.validateSearchResults(brandName);
-
-        // Now click first result — brand popup opens after this
-        allCategoriesPage.clickFirstSearchResult();
-        BrandPage brandPage = new BrandPage(page);
-
-        // ── 4. Activate cashback → opens external page → close it ───────────────
-        brandPage.activateCashbackAndClose(context, 5000);
-
+    private void assertExternalPageClosed() {
         Assertions.assertThat(context.pages().size())
                 .as("External brand page should be closed; only one page should remain")
                 .isEqualTo(1);
+    }
 
-        // ── 5. Expand cashback rates (twice) ────────────────────────────────────
-        brandPage.expandCashbackRates();
-        brandPage.expandCashbackRates();
-
+    private void assertExpandCashbackRatesButtonVisible() {
         page.waitForSelector(
                 "//button[@class='sc-fQpRED bUMSEu' or contains(text(),'See more rates')]",
                 new com.microsoft.playwright.Page.WaitForSelectorOptions()
@@ -87,10 +120,9 @@ public class CashbackFlowTest extends BaseTest {
                         .isVisible())
                 .as("Expand cashback rates button should still be present after two expansions")
                 .isTrue();
+    }
 
-        // ── 6. Close the brand popup ────────────────────────────────────────────
-        brandPage.closeBrandPopup();
-
+    private void assertBrandPopupClosed() {
         page.waitForSelector(
                 "(//button[.//*[name()='path' and contains(@d,'M6 18 18 6')]])[2]",
                 new com.microsoft.playwright.Page.WaitForSelectorOptions()
@@ -102,100 +134,90 @@ public class CashbackFlowTest extends BaseTest {
                         .isVisible())
                 .as("Brand popup close button should no longer be visible after closing")
                 .isFalse();
+    }
 
-        // ── 7. Click Popular filter ─────────────────────────────────────────────
-        allCategoriesPage.clickPopularFilter();
-
+    private void assertPopularFilterCampaignsVisible() {
         Assertions.assertThat(
                 page.locator("//div[@class='sc-liquwA gTREJt']").count())
                 .as("Campaign cards should be visible after selecting Popular filter")
                 .isGreaterThan(0);
-
-        // ── 8. Click A-Z filter and validate sort order ─────────────────────────
-     
-allCategoriesPage.clickAToZFilter();
-
-List<String> names = allCategoriesPage.A_Z_filter_getCampaignNames();
-
-Assertions.assertThat(names)
-        .as("A-Z filter should return at least one campaign name")
-        .isNotEmpty();
-
-String previousName           = null;
-char   previousFirstChar      = 0;
-boolean previousWasLatinLetter = false;
-
-for (String name : names) {
-
-    // Normalize: strip accents, remove spaces, lowercase
-    String normalized = java.text.Normalizer
-            .normalize(name, java.text.Normalizer.Form.NFD)
-            .replaceAll("[^\\p{ASCII}]", "")
-            .replaceAll("\\s+", "")
-            .toLowerCase()
-            .trim();
-
-    if (normalized.isEmpty()) {
-        System.out.println("Skipping non-ASCII/Cyrillic entry: " + name);
-        continue;
     }
 
-    char firstChar = normalized.charAt(0);
+    private void assertAToZSortOrder(List<String> names) {
+        Assertions.assertThat(names)
+                .as("A-Z filter should return at least one campaign name")
+                .isNotEmpty();
 
-    // Skip special characters (not letter or digit)
-    if (!Character.isLetterOrDigit(firstChar)) {
-        System.out.println("Skipping special character entry: " + name + " [" + firstChar + "]");
-        continue;
-    }
+        String  previousName           = null;
+        char    previousFirstChar      = 0;
+        boolean previousWasLatinLetter = false;
 
-    // Skip entries whose original name starts with non-Latin script (Cyrillic, Arabic, etc.)
-    // These appear at the end in the app and break Latin A-Z ordering
-    char originalFirst = name.trim().charAt(0);
-    if (!Character.isLetterOrDigit(originalFirst) || originalFirst > 127) {
-        System.out.println("Skipping non-Latin script entry: " + name);
-        continue;
-    }
+        for (String name : names) {
 
-    if (previousName != null && previousWasLatinLetter) {
+            // Normalize: strip accents, remove spaces, lowercase
+            String normalized = java.text.Normalizer
+                    .normalize(name, java.text.Normalizer.Form.NFD)
+                    .replaceAll("[^\\p{ASCII}]", "")
+                    .replaceAll("\\s+", "")
+                    .toLowerCase()
+                    .trim();
 
-        System.out.println("Comparing: " + previousName + " [" + previousFirstChar + "]"
-                + " -> " + name + " [" + firstChar + "]");
+            if (normalized.isEmpty()) {
+                System.out.println("Skipping non-ASCII/Cyrillic entry: " + name);
+                continue;
+            }
 
-        boolean previousIsDigit = Character.isDigit(previousFirstChar);
-        boolean currentIsDigit  = Character.isDigit(firstChar);
+            char firstChar = normalized.charAt(0);
 
-        if (previousIsDigit && !currentIsDigit) {
-            System.out.println("OK: number -> letter");
+            // Skip special characters (not letter or digit)
+            if (!Character.isLetterOrDigit(firstChar)) {
+                System.out.println("Skipping special character entry: " + name + " [" + firstChar + "]");
+                continue;
+            }
 
-        } else if (!previousIsDigit && currentIsDigit) {
-            Assertions.fail(
-                "Sort order invalid: letter before number. " +
-                "Previous: '" + previousName + "' [" + previousFirstChar + "], " +
-                "Current: '"  + name         + "' [" + firstChar + "]"
-            );
+            // Skip entries whose original name starts with non-Latin script (Cyrillic, Arabic, etc.)
+            // These appear at the end in the app and break Latin A-Z ordering
+            char originalFirst = name.trim().charAt(0);
+            if (!Character.isLetterOrDigit(originalFirst) || originalFirst > 127) {
+                System.out.println("Skipping non-Latin script entry: " + name);
+                continue;
+            }
 
-        } else {
-            Assertions.assertThat((int) firstChar)
-                    .as("Not sorted A-Z. Previous: '%s' [%s], Current: '%s' [%s]",
-                            previousName, previousFirstChar, name, firstChar)
-                    .isGreaterThanOrEqualTo((int) previousFirstChar);
+            if (previousName != null && previousWasLatinLetter) {
+
+                System.out.println("Comparing: " + previousName + " [" + previousFirstChar + "]"
+                        + " -> " + name + " [" + firstChar + "]");
+
+                boolean previousIsDigit = Character.isDigit(previousFirstChar);
+                boolean currentIsDigit  = Character.isDigit(firstChar);
+
+                if (previousIsDigit && !currentIsDigit) {
+                    System.out.println("OK: number -> letter");
+
+                } else if (!previousIsDigit && currentIsDigit) {
+                    Assertions.fail(
+                        "Sort order invalid: letter before number. " +
+                        "Previous: '" + previousName + "' [" + previousFirstChar + "], " +
+                        "Current: '"  + name         + "' [" + firstChar + "]"
+                    );
+
+                } else {
+                    Assertions.assertThat((int) firstChar)
+                            .as("Not sorted A-Z. Previous: '%s' [%s], Current: '%s' [%s]",
+                                    previousName, previousFirstChar, name, firstChar)
+                            .isGreaterThanOrEqualTo((int) previousFirstChar);
+                }
+            }
+
+            previousName           = name;
+            previousFirstChar      = firstChar;
+            previousWasLatinLetter = true;
         }
+
+        System.out.println("A-Z sort validation PASSED for " + names.size() + " campaigns");
     }
 
-    previousName           = name;
-    previousFirstChar      = firstChar;
-    previousWasLatinLetter = true;
-}
-
-System.out.println("A-Z sort validation PASSED for " + names.size() + " campaigns");
-        
-allCategoriesPage.clickAToZDropdown();
-
-        // ── 9. Click Cashback filter and validate descending rates ───────────────
-        allCategoriesPage.clickCashbackFilter();
-
-        List<String> rates = allCategoriesPage.cashback_filter_getCommissionRates();
-
+    private void assertCashbackDescendingOrder(List<String> rates) {
         Assertions.assertThat(rates)
                 .as("Cashback filter should return at least one commission rate")
                 .isNotEmpty();
@@ -224,10 +246,9 @@ allCategoriesPage.clickAToZDropdown();
         }
 
         System.out.println("Cashback% sort validation PASSED for " + rates.size() + " rates");
+    }
 
-        // ── 10. Go back ──────────────────────────────────────────────────────────
-        allCategoriesPage.clickBackButton();
-
+    private void assertBackOnHomePage() {
         Assertions.assertThat(page.locator("//div[@class='sc-bTwLay bFNzwR']").isVisible())
                 .as("Menu button should be visible after navigating back to home")
                 .isTrue();
