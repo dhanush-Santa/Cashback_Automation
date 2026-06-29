@@ -3,6 +3,7 @@ package pages;
 import base.BaseTest;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.microsoft.playwright.Locator;
@@ -272,6 +273,121 @@ public void clickAToZDropdown() {
         System.out.println("Timed out waiting for filter options after A-Z dropdown");
         e.printStackTrace();
     }
+}
+
+
+public String getBrandName()
+{
+     ArrayList<String> storeNames = new ArrayList<>(Arrays.asList(
+    "Mytrip.com",
+    "Homestyler WW",
+    "Nadula",
+    "Igp",
+    "Gotogate",
+    "Sunsky",
+    "ChicMe",
+    "TurboVPN",
+    "Just fashion Now",
+    "Eurowings",
+    "InVideo",
+    "Sanatoriums",
+    "The Luxury Closet",
+    "italki",
+    "Planner5d",
+    "Tapfiliate",
+    "Compensair",
+    "RaynaTours",
+    "PureVPN",
+    "VectorStock WW",
+    "Tiqets Many GEOs",
+    "AliExpress",
+    "Yohomobile",
+    "WarGaming",
+    "SEAGM",
+    "AbeBooks",
+    "Coursera",
+    "Magic Keys",
+    "Shopbop",
+    "Banggood",
+    "Trip.com",
+    "Deel",
+    "Gamivo",
+    "Air Doctor",
+    "British Council",
+    "PureVPN",
+    "Southwest",
+    "Selenichast",
+    "Envato Elements",
+    "Padel Market",
+    "Airhelp",
+    "BINGE Movies & TV",
+    "Olive Young Global",
+    "SSLs",
+    "iberlibro",
+    "SurfShark",
+    "Nexo",
+    "PYPROXY",
+    "Blinkist",
+    "Envato Placeit",
+    "Lilysilk",
+    "International Open Academy",
+    "Edureka",
+    "imyFone",
+    "Gameseal",
+    "Annie cloth",
+    "Travelstart",
+    "Hover",
+    "Qustodio",
+    "Internxt",
+    "Just Fashion Now",
+    "Mister Aladin",
+    "Hasthemes",
+    "Stylevana",
+    "KOSPET Smartwatch",
+    "ClevGuard",
+    "Switcher Studio",
+    "Voghion",
+    "Malaysia Airlines",
+    "Quillbot",
+    "Homestyler",
+    "Ccleaner",
+    "TrainPal",
+    "DreamHost",
+    "Hostpapa",
+    "LePARMENTIER Paris",
+    "Upwork",
+    "Moosend",
+    "SaneBox",
+    "Roamless",
+    "Hostarmada",
+    "Eventtrix",
+    "Millenniumhotels",
+    "Travel Code",
+    "Saily",
+    "Pond5",
+    "Tax1099",
+    "Campaigner",
+    "Klook",
+    "Coofandy",
+    "KKday",
+    "Domain.com",
+    "Network Solutions",
+    "Marcopolohotels",
+    "Zen Hotels",
+    "Fly Fairly",
+    "Sider.ai",
+    "Planner5d",
+    "Jetpac Global",
+    "BILL"
+));
+
+int num= (int) (Math.random() * storeNames.size());
+String brandName = storeNames.get(num);
+
+brandName =brandName.length() > 3 ? brandName.substring(0,3) : brandName;
+return brandName;
+
+
 }
 
 

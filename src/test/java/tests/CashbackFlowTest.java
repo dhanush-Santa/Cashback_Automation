@@ -13,6 +13,10 @@ import java.util.List;
 
 public class CashbackFlowTest extends BaseTest {
 
+
+
+
+
     @Test
     public void cashback_homepage_test() throws InterruptedException {
 
@@ -40,7 +44,8 @@ public class CashbackFlowTest extends BaseTest {
                 .isTrue();
 
         // ── 3. Search brand → assert results → then click ──────────────────────
-        allCategoriesPage.enterSearchText("myn");
+        String brandName = allCategoriesPage.getBrandName();
+        allCategoriesPage.enterSearchText(brandName);
 
         // Wait for results to appear BEFORE clicking
         page.waitForSelector(".search_result_item",
@@ -54,7 +59,7 @@ public class CashbackFlowTest extends BaseTest {
                 .isGreaterThan(0);
 
         // Validate brand name appears in results
-        allCategoriesPage.validateSearchResults("myn");
+        allCategoriesPage.validateSearchResults(brandName);
 
         // Now click first result — brand popup opens after this
         allCategoriesPage.clickFirstSearchResult();

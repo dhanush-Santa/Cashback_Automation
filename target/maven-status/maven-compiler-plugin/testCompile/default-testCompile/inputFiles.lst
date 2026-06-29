@@ -1,2 +1,6 @@
-C:\Users\DELL\Projects\cashback\src\test\java\com\santabrowser\cashback\AppTest.java
-C:\Users\DELL\Projects\cashback\src\test\java\com\santabrowser\cashback\CashbackFlowTest.java
+C:\Users\DELL\Projects\cashback\src\test\java\base\BaseTest.java
+C:\Users\DELL\Projects\cashback\src\test\java\pages\AllCategoriesPage.java
+C:\Users\DELL\Projects\cashback\src\test\java\pages\BrandPage.java
+C:\Users\DELL\Projects\cashback\src\test\java\pages\CashbackPage.java
+C:\Users\DELL\Projects\cashback\src\test\java\pages\HomePage.java
+C:\Users\DELL\Projects\cashback\src\test\java\tests\CashbackFlowTest.java

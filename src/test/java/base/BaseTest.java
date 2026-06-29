@@ -4,6 +4,7 @@ import com.microsoft.playwright.*;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.nio.file.Paths;
 import java.util.List;
 
 public class BaseTest {
@@ -21,20 +22,20 @@ public class BaseTest {
 
         browser = playwright.chromium().launch(
                 new BrowserType.LaunchOptions()
+                        .setExecutablePath(Paths.get("C:\\Users\\DELL\\AppData\\Local\\Santa\\Application\\santa.exe"))
                         .setHeadless(false)
                         .setSlowMo(1000)
                         .setArgs(List.of("--start-maximized"))
         );
 
-        context = browser.newContext(
-                new Browser.NewContextOptions()
-                        .setViewportSize(null)
-        );
+    context = browser.newContext(
+            new Browser.NewContextOptions()
+                    .setViewportSize(null)
+    );
 
-        page = context.newPage();
-        System.out.println("Browser setup complete");
-    }
-
+    page = context.newPage();
+    System.out.println("Santa Browser setup complete");
+}
     // ── Browser Teardown ─────────────────────────────────────────────────────────
 
     @AfterMethod
