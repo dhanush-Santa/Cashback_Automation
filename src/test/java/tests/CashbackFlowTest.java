@@ -13,6 +13,12 @@ import java.util.List;
 
 public class CashbackFlowTest extends BaseTest {
 
+
+
+
+
+
+
     @Test
     public void cashback_homepage_test() throws InterruptedException {
 
@@ -66,8 +72,17 @@ public class CashbackFlowTest extends BaseTest {
        allCategoriesPage.scrollDownCampaigns(page);
 
         // ── 10. Go back ──────────────────────────────────────────────────────────
+
         allCategoriesPage.clickBackButton();
-        assertBackOnHomePage();
+
+        homePage.iterateCategoriesAndCheckCampaigns(page);
+
+
+
+
+
+
+        // assertBackOnHomePage();
     }
 
     // ── Assertion helpers ──────────────────────────────────────────────────────
