@@ -11,7 +11,7 @@ public class HomePage extends BaseTest {
 
     // ── URL ──────────────────────────────────────────────────────────────────────
     private static final String HOME_URL =
-            "https://shopping.santabrowser.com/?uuid=7ab3625ba5f7fab";
+            "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
 
     // ── Constructor ─────────────────────────────────────────────────────────────
     public HomePage(Page page) {

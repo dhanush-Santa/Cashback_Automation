@@ -1,1 +1,0 @@
-{"uuid":"4708f6da-ca72-4516-b765-3d987ca1c270","name":"tests.CashbackFlowTest.setup","children":["aed55e11-af70-4680-862a-d8097d5d07e9"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1780562319324,"stop":1780562353000}],"afters":[],"start":1780562319323,"stop":1780562353011}
