@@ -75,12 +75,8 @@ public class CashbackFlowTest extends BaseTest {
 
         allCategoriesPage.clickBackButton();
 
-        homePage.iterateCategoriesAndCheckCampaigns(page);
-
-
-
-
-
+      //  homePage.iterateCategoriesAndCheckCampaigns(page);
+      homePage.verifyAllCategoryFilters();
 
         // assertBackOnHomePage();
     }
@@ -269,3 +265,5 @@ public class CashbackFlowTest extends BaseTest {
                 .isTrue();
     }
 }
+
+

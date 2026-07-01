@@ -4,6 +4,7 @@ import base.BaseTest;
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.LoadState;
 
 public class HomePage extends BaseTest {
@@ -86,10 +87,50 @@ public void iterateCategoriesAndCheckCampaigns(Page page) {
     }
 }
 
+ public void verifyAllCategoryFilters() {
 
+        verifyCategory("Fashion");
+        verifyCategory("Beauty");
+        verifyCategory("Gaming");
+        verifyCategory("Food & Grocery");
+        verifyCategory("Electronics");
+        verifyCategory("Travel");
+        verifyCategory("Health & Fitness");
+        verifyCategory("Home & Kitchen");
+        System.out.println("All category filters verified successfully");
+    }
 
+    private void verifyCategory(String categoryName) {
 
+        page.getByRole(AriaRole.HEADING,
+                new Page.GetByRoleOptions().setName(categoryName))
+                .click();
+
+        verifyFilters();
+
+        page.locator(".sc-jcHdAB > svg").click();
+    }
+
+    private void verifyFilters() {
+
+        page.getByRole(AriaRole.BUTTON,
+                new Page.GetByRoleOptions().setName("Popular"))
+                .click();
+
+        page.getByText("A-Z").click();
+
+        page.getByRole(AriaRole.BUTTON,
+                new Page.GetByRoleOptions().setName("A-Z"))
+                .click();
+
+        page.getByText("Cashback %").click();
+    }
+
+    
 }
+
+
+
 
 
 
