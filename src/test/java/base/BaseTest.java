@@ -1,7 +1,8 @@
 package base;
 
 import com.microsoft.playwright.*;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import java.nio.file.Paths;
@@ -9,15 +10,17 @@ import java.util.List;
 
 public class BaseTest {
 
-    public Playwright playwright;
-    public Browser browser;
-    public BrowserContext context;
-    public Page page;
+    protected Playwright playwright;
+    protected Browser browser;
+    protected BrowserContext context;
+    protected Page page;
 
-    // ── Browser Setup ────────────────────────────────────────────────────────────
+    protected final String BASE_URL =
+            "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
+
         playwright = Playwright.create();
 
         browser = playwright.chromium().launch(
@@ -28,47 +31,36 @@ public class BaseTest {
                         .setArgs(List.of("--start-maximized"))
         );
 
-    context = browser.newContext(
-            new Browser.NewContextOptions()
-                    .setViewportSize(null)
-    );
+        context = browser.newContext(
+                new Browser.NewContextOptions()
+                        .setViewportSize(null)
+        );
 
-    page = context.newPage();
-    System.out.println("Santa Browser setup complete");
-}
-    // ── Browser Teardown ─────────────────────────────────────────────────────────
+        page = context.newPage();
 
-    @AfterMethod
+        System.out.println("Browser launched");
+    }
+
+    @BeforeMethod
+    public void openCashback() {
+
+        System.out.println("Opening Cashback Home Page");
+
+        page.navigate(BASE_URL);
+    }
+
+    @AfterClass
     public void tearDown() {
-        if (browser != null) browser.close();
-        if (playwright != null) playwright.close();
-        System.out.println("Browser closed");
-    }
 
-    // ── Shared Action Helpers ────────────────────────────────────────────────────
+        if (context != null)
+            context.close();
 
-    public void click(String name, String xpath) {
-        try {
-            System.out.println("Trying to click on : " + name);
-            page.locator(xpath).click();
-            System.out.println(name + " clicked successfully");
-        } catch (Exception e) {
-            System.out.println("Failed to click on : " + name);
-            System.out.println("XPath used : " + xpath);
-            e.printStackTrace();
-        }
-    }
+        if (browser != null)
+            browser.close();
 
-    public void fill(String name, String xpath, String value) {
-        try {
-            System.out.println("Trying to fill : " + name);
-            page.locator(xpath).clear();
-            page.locator(xpath).fill(value);
-            System.out.println("Filled " + name + " with : " + value);
-        } catch (Exception e) {
-            System.out.println("Failed to fill : " + name);
-            System.out.println("XPath used : " + xpath);
-            e.printStackTrace();
-        }
+        if (playwright != null)
+            playwright.close();
+
+        System.out.println("Browser Closed");
     }
 }

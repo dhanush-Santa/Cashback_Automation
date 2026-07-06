@@ -1,93 +1,67 @@
 package pages;
 
-import base.BaseTest;
-import com.microsoft.playwright.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.LoadState;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
-public class HomePage extends BaseTest {
+public class HomePage {
 
-    // ── Locators ────────────────────────────────────────────────────────────────
-    private static final String MENU           = "//div[@class='sc-bTwLay bFNzwR']";
-    private static final String ALL_CATEGORIES = "//p[contains(text(),'Categories')]";
+    private static final int DEFAULT_TIMEOUT = 10000;
 
-    // ── URL ──────────────────────────────────────────────────────────────────────
-    private static final String HOME_URL =
-            "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
+    private final Page page;
 
-    // ── Constructor ─────────────────────────────────────────────────────────────
     public HomePage(Page page) {
         this.page = page;
     }
 
-    // ── Actions ──────────────────────────────────────────────────────────────────
+    public boolean iterateCategoriesAndCheckCampaigns() {
 
-    public void open() {
-        page.navigate(HOME_URL);
-        System.out.println("Cashback home page opened successfully");
-    }
+        String tileSelector = ".sc-czgmHJ.fowaoO";
+        String backButtonSelector = ".sc-exayXG .cursor-pointer svg";
+        String campaignSelector = "button:has-text('Cashback')";
 
-    public void clickMenu() {
-        click("Menu", MENU);
-    }
-
-    public AllCategoriesPage clickAllCategories() {
-        click("All Categories", ALL_CATEGORIES);
-        return new AllCategoriesPage(page);
-    }
-
-
-public void iterateCategoriesAndCheckCampaigns(Page page) {
-    // 1. Selector for tiles on the main page
-    String tileSelector = ".sc-czgmHJ.fowaoO";
-    // 2. Selector for the back button on the details page (the SVG container)
-    String backButtonSelector = ".sc-exayXG .cursor-pointer svg";
-    // 3. Selector for campaigns (Cashback buttons)
-    String campaignSelector = "button:has-text('Cashback')";
-
-    page.waitForSelector(tileSelector);
-    int totalTiles = page.locator(tileSelector).count();
-
-    for (int i = 0; i < totalTiles; i++) {
-        // Step A: Click Category Tile
-        Locator currentTile = page.locator(tileSelector).nth(i);
-        String categoryName = currentTile.locator("h3").innerText();
-        System.out.println("Checking Category: " + categoryName);
-        currentTile.click();
-
-        // Step B: Wait for details page to load
-        page.waitForLoadState(LoadState.NETWORKIDLE);
-        page.waitForSelector(".sc-dwYcXH.bXozVc"); // Container for campaign details
-
-        // Step C: Verify Campaigns
-        int campaignCount = page.locator(campaignSelector).count();
-        if (campaignCount > 0) {
-            System.out.println("-> SUCCESS: Found " + campaignCount + " campaigns for " + categoryName);
-        } else {
-            System.out.println("-> WARNING: No campaigns found for " + categoryName);
-        }
-        
-
-        
-           
-        // Step D: Click Back Button
-        // We use the SVG selector found in the inspection
-        Locator backBtn = page.locator(backButtonSelector).first();
-        if (backBtn.isVisible()) {
-            backBtn.click();
-        } else {
-            // Fallback if the UI back button isn't reachable
-            page.goBack();
-        }
-
-        // Step E: Wait for main grid to return
         page.waitForSelector(tileSelector);
-    }
-}
 
- public void verifyAllCategoryFilters() {
+        int totalTiles = page.locator(tileSelector).count();
+
+        for (int i = 0; i < totalTiles; i++) {
+
+            Locator currentTile = page.locator(tileSelector).nth(i);
+
+            String categoryName = currentTile.locator("h3").innerText();
+
+            currentTile.click();
+
+            page.waitForLoadState(LoadState.NETWORKIDLE);
+
+            int campaignCount = page.locator(campaignSelector).count();
+
+            if (campaignCount == 0) {
+                System.out.println("No campaigns found for " + categoryName);
+                return false;
+            }
+
+            Locator backBtn = page.locator(backButtonSelector).first();
+            backBtn.click();
+
+            page.waitForSelector(tileSelector);
+        }
+
+        return true;
+    }
+
+    /*
+     * -------------------------------------------------------------------------
+     * Existing methods (kept as-is)
+     * -------------------------------------------------------------------------
+     */
+//Categories that are present in the home page which are displayed as tiles.
+    public void verifyAllCategoryFilters() {
 
         verifyCategory("Fashion");
         verifyCategory("Beauty");
@@ -97,12 +71,12 @@ public void iterateCategoriesAndCheckCampaigns(Page page) {
         verifyCategory("Travel");
         verifyCategory("Health & Fitness");
         verifyCategory("Home & Kitchen");
-        System.out.println("All category filters verified successfully");
     }
 
     private void verifyCategory(String categoryName) {
 
-        page.getByRole(AriaRole.HEADING,
+        page.getByRole(
+                AriaRole.HEADING,
                 new Page.GetByRoleOptions().setName(categoryName))
                 .click();
 
@@ -113,26 +87,165 @@ public void iterateCategoriesAndCheckCampaigns(Page page) {
 
     private void verifyFilters() {
 
-        page.getByRole(AriaRole.BUTTON,
+        page.getByRole(
+                AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName("Popular"))
                 .click();
 
         page.getByText("A-Z").click();
 
-        page.getByRole(AriaRole.BUTTON,
+        page.getByRole(
+                AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName("A-Z"))
                 .click();
 
         page.getByText("Cashback %").click();
     }
 
-    
+    /*
+     * -------------------------------------------------------------------------
+     * New reusable methods for sorting validation
+     * -------------------------------------------------------------------------
+     */
+
+    public void openCategory(String categoryName) {
+
+        page.getByRole(
+                AriaRole.HEADING,
+                new Page.GetByRoleOptions().setName(categoryName))
+                .click();
+    }
+
+    public void clickAZFilter() {
+
+        page.getByRole(
+                AriaRole.BUTTON,
+                new Page.GetByRoleOptions().setName("Popular"))
+                .click();
+
+        page.getByText("A-Z").click();
+    }
+
+    public void clickCashbackFilter() {
+
+        page.getByRole(
+                AriaRole.BUTTON,
+                new Page.GetByRoleOptions().setName("A-Z"))
+                .click();
+
+        page.getByText("Cashback %").click();
+    }
+
+    public void closeFilterPopup() {
+
+        page.locator(".sc-jcHdAB > svg").click();
+    }
+
+  
+
+    public List<String> A_Z_filter_getCampaignNames() {
+
+        page.waitForSelector(
+                "//div[@class='sc-liquwA gTREJt']//p[@class='sc-fTgapq iODjVi']",
+                new Page.WaitForSelectorOptions()
+                        .setState(WaitForSelectorState.VISIBLE)
+                        .setTimeout(DEFAULT_TIMEOUT));
+
+        Locator campaigns = page.locator(
+                "//div[@class='sc-liquwA gTREJt']//p[@class='sc-fTgapq iODjVi']");
+
+        List<String> campaignNames = new ArrayList<>();
+
+        int count = campaigns.count();
+
+        for (int i = 0; i < count; i++) {
+            campaignNames.add(campaigns.nth(i).innerText().trim());
+        }
+
+        return campaignNames;
+    }
+
+    /*
+     * -------------------------------------------------------------------------
+     * Returns cashback percentages after Cashback filter
+     * -------------------------------------------------------------------------
+     */
+
+    public List<String> cashback_filter_getCommissionRates() {
+
+        page.waitForSelector(
+                "//div[@class='sc-liquwA gTREJt']//p[@class='sc-foMnoT ezYCvz']",
+                new Page.WaitForSelectorOptions()
+                        .setState(WaitForSelectorState.VISIBLE)
+                        .setTimeout(DEFAULT_TIMEOUT));
+
+        Locator campaigns = page.locator(
+                "//div[@class='sc-liquwA gTREJt']//p[@class='sc-foMnoT ezYCvz']");
+
+        List<String> commissionRates = new ArrayList<>();
+
+        int count = campaigns.count();
+
+        for (int i = 0; i < count; i++) {
+            commissionRates.add(campaigns.nth(i).innerText().trim());
+        }
+
+        return commissionRates;
+    }
+public List<String> getCampaignNames() {
+
+    page.waitForSelector("//div[@class='sc-liquwA gTREJt']//p[@class='sc-fTgapq iODjVi']");
+
+    return page.locator("//div[@class='sc-liquwA gTREJt']//p[@class='sc-fTgapq iODjVi']")
+            .allInnerTexts();
 }
 
+public void changeCountryToUnitedStates() {
 
+    page.getByRole(AriaRole.BUTTON,
+            new Page.GetByRoleOptions().setName("India"))
+            .click();
 
+    page.getByRole(AriaRole.TEXTBOX,
+            new Page.GetByRoleOptions().setName("India"))
+            .fill("uni");
 
+    page.getByRole(AriaRole.LINK,
+            new Page.GetByRoleOptions().setName("United States"))
+            .click();
+}
 
+public void openAllCategories() {
 
+    page.locator(".sc-bTwLay").click();
 
+    page.getByRole(
+            AriaRole.BUTTON,
+            new Page.GetByRoleOptions().setName("All Categories All Categories"))
+            .click();
+}
+public void openCategoriesMenu() {
 
+    page.locator(".sc-bTwLay").click();
+}
+public List<String> getAllCategories() {
+
+    page.waitForSelector("p.sc-hDcvty.fyGVpJ");
+
+    return page.locator("p.sc-hDcvty.fyGVpJ")
+               .allInnerTexts();
+}
+public void clickCategory(String categoryName) {
+
+    page.getByRole(
+            AriaRole.BUTTON,
+            new Page.GetByRoleOptions()
+                    .setName(categoryName + " " + categoryName))
+            .click();
+}
+public void closeCategoryPopup() {
+
+    page.locator(".sc-jcHdAB > svg").click();
+}
+
+}
