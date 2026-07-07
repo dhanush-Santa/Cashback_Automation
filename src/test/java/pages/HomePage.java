@@ -248,4 +248,7 @@ public void closeCategoryPopup() {
     page.locator(".sc-jcHdAB > svg").click();
 }
 
+
+
+
 }

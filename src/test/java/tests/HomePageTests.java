@@ -106,6 +106,7 @@ public void VerifyCategoriesMenuTest_005() {
     homePage.closeCategoryPopup();
 }
 
+
 private void assertCategoriesDisplayed(List<String> categories) {
 
     Assert.assertFalse(

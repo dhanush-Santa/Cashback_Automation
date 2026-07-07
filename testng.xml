@@ -5,6 +5,7 @@
         <classes>
             <class name="tests.AllCategoriesTest"/>
             <class name="tests.HomePageTests"/>
+              <class name="tests.TotalEarningsTests"/>
         </classes>
     </test>
 </suite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="186.108" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="204.244" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire11553684425390497344\surefirebooter-20260706174134758_3.jar C:\Users\DELL\AppData\Local\Temp\surefire11553684425390497344 2026-07-06T17-41-34_346-jvmRun1 surefire-20260706174134758_1tmp surefire_0-20260706174134758_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609\surefirebooter-20260707142037567_3.jar C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609 2026-07-07T14-20-37_252-jvmRun1 surefire-20260707142037567_1tmp surefire_0-20260707142037567_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\DELL\Projects\cashback\target\test-classes;C:\Users\DELL\Projects\cashback\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.59.0\playwright-1.59.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.59.0\driver-1.59.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.59.0\driver-bundle-1.59.0.jar;C:\Users\DELL\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\DELL\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\DELL\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\DELL\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\DELL\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;"/>
     <property name="allure.results.directory" value="C:\Users\DELL\Projects\cashback\target/allure-results"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire11553684425390497344\surefirebooter-20260706174134758_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609\surefirebooter-20260707142037567_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+10"/>
@@ -60,17 +60,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="clickonsearchresult__006" classname="tests.AllCategoriesTest" time="6.114">
-    <system-out><![CDATA[17:41:37.388 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\DELL\Projects\cashback\testng.xml"
-17:41:37.730 [main] INFO org.testng.internal.Utils -- [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+  <testcase name="clickonsearchresult__006" classname="tests.AllCategoriesTest" time="6.486">
+    <system-out><![CDATA[14:20:39.434 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\DELL\Projects\cashback\testng.xml"
+14:20:39.650 [main] INFO org.testng.internal.Utils -- [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
 Browser launched
 Opening Cashback Home Page
-Total campaigns collected: 537
-Selected Campaign: Eyejack
-Brand popup opened successfully for: Eyejack
+Total campaigns collected: 538
+Selected Campaign: OVAGO
+Brand popup opened successfully for: OVAGO
 ]]></system-out>
   </testcase>
-  <testcase name="verifyAZFilterTest_003" classname="tests.AllCategoriesTest" time="28.301">
+  <testcase name="verifyAZFilterTest_003" classname="tests.AllCategoriesTest" time="28.679">
     <system-out><![CDATA[Opening Cashback Home Page
 Comparing: 10Web [1] -> 12Go Asia Pte., Ltd. [1]
 Comparing: 12Go Asia Pte., Ltd. [1] -> 2Game [2]
@@ -369,7 +369,8 @@ Comparing: Malaysia Airlines [m] -> Malwarebytes [m]
 Comparing: Malwarebytes [m] -> Marcopolohotels [m]
 Comparing: Marcopolohotels [m] -> MaxLife Insurance [m]
 Comparing: MaxLife Insurance [m] -> McAfee Work From Home [m]
-Comparing: McAfee Work From Home [m] -> Megadreams Limited [m]
+Comparing: McAfee Work From Home [m] -> Me+ Daily Routine Planner [m]
+Comparing: Me+ Daily Routine Planner [m] -> Megadreams Limited [m]
 Comparing: Megadreams Limited [m] -> Meta Box [m]
 Comparing: Meta Box [m] -> Millenniumhotels [m]
 Comparing: Millenniumhotels [m] -> Milton [m]
@@ -636,21 +637,21 @@ Comparing: Zanducare [z] -> Zen Hotels [z]
 Comparing: Zen Hotels [z] -> Zendrop [z]
 Comparing: Zendrop [z] -> Zenzap [z]
 Skipping non-Latin script entry: Часы Молния Many GEOs
-A-Z sort validation PASSED for 564 campaigns
+A-Z sort validation PASSED for 565 campaigns
 ]]></system-out>
   </testcase>
-  <testcase name="verifyActivateCashbackReflectsInClicksTest_005" classname="tests.AllCategoriesTest" time="7.321">
+  <testcase name="verifyActivateCashbackReflectsInClicksTest_005" classname="tests.AllCategoriesTest" time="7.331">
     <system-out><![CDATA[Opening Cashback Home Page
-Brand cards found in grid: 564
-Randomly selected brand at position 465 → Packedwithpurpose
+Brand cards found in grid: 565
+Randomly selected brand at position 466 → Packedwithpurpose
 New tab opened, waiting for it to finish loading...
-New tab finished loading: https://shopping.santabrowser.com/out/44352/store/44352?uuid=2da68a9dd8c5a73&appsflyer_id=&theme=light
+New tab finished loading: https://shopping.santabrowser.com/out/44352/store/44352?uuid=b8f53f9a0bf4635&appsflyer_id=&theme=light
 New tab closed
 Latest click store: Packedwithpurpose
 Verified: Activated brand 'Packedwithpurpose' matches latest click entry 'Packedwithpurpose'
 ]]></system-out>
   </testcase>
-  <testcase name="verifyCashbackFilterTest_004" classname="tests.AllCategoriesTest" time="2.675">
+  <testcase name="verifyCashbackFilterTest_004" classname="tests.AllCategoriesTest" time="3.412">
     <system-out><![CDATA[Opening Cashback Home Page
 Commission rate: 1524.18% (raw: $1,524.18)
 Commission rate: 320.88% (raw: $320.88)
@@ -730,6 +731,7 @@ Commission rate: 32.0% (raw: 32.00%)
 Commission rate: 30.77% (raw: 30.77%)
 Commission rate: 30.6% (raw: 30.60%)
 Commission rate: 30.6% (raw: 30.60%)
+Commission rate: 28.0% (raw: 28.00%)
 Commission rate: 28.0% (raw: 28.00%)
 Commission rate: 28.0% (raw: 28.00%)
 Commission rate: 28.0% (raw: 28.00%)
@@ -1216,36 +1218,36 @@ Commission rate: 0.14% (raw: $0.14)
 Commission rate: 0.13% (raw: $0.13)
 Commission rate: 0.04% (raw: $0.04)
 Commission rate: 0.01% (raw: 0.01%)
-Cashback% sort validation PASSED for 564 rates
+Cashback% sort validation PASSED for 565 rates
 ]]></system-out>
   </testcase>
-  <testcase name="verifyRandomCampaignSearchTest_001" classname="tests.AllCategoriesTest" time="4.879">
+  <testcase name="verifyRandomCampaignSearchTest_001" classname="tests.AllCategoriesTest" time="5.009">
     <system-out><![CDATA[Opening Cashback Home Page
-Total campaigns collected: 537
-Selected Campaign: Academiedugout
+Total campaigns collected: 538
+Selected Campaign: Ajio
 ]]></system-out>
   </testcase>
-  <testcase name="verifyRandomInvalidCampaignSearchTest_002" classname="tests.AllCategoriesTest" time="1.26">
+  <testcase name="verifyRandomInvalidCampaignSearchTest_002" classname="tests.AllCategoriesTest" time="1.304">
     <system-out><![CDATA[Opening Cashback Home Page
-Searching Invalid Campaign: randomXYZ
+Searching Invalid Campaign: invalid_store_999
 ]]></system-out>
   </testcase>
-  <testcase name="IterateCategoriesAndCheckCampaignsTest_002" classname="tests.HomePageTests" time="17.717">
+  <testcase name="IterateCategoriesAndCheckCampaignsTest_002" classname="tests.HomePageTests" time="18.222">
     <system-out><![CDATA[Browser Closed
 Browser launched
 Opening Cashback Home Page
 ]]></system-out>
   </testcase>
-  <testcase name="OpenHomePageTest_001" classname="tests.HomePageTests" time="0.007">
+  <testcase name="OpenHomePageTest_001" classname="tests.HomePageTests" time="0.005">
     <system-out><![CDATA[Opening Cashback Home Page
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCategoriesMenuTest_005" classname="tests.HomePageTests" time="3.298">
+  <testcase name="VerifyCategoriesMenuTest_005" classname="tests.HomePageTests" time="3.251">
     <system-out><![CDATA[Opening Cashback Home Page
 Categories displayed : 25
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCategoryFiltersTest_003" classname="tests.HomePageTests" time="51.907">
+  <testcase name="VerifyCategoryFiltersTest_003" classname="tests.HomePageTests" time="51.846">
     <system-out><![CDATA[Opening Cashback Home Page
 Comparing: Ajio [a] -> Ajmal Perfumes [a]
 Comparing: Ajmal Perfumes [a] -> AliExpress [a]
@@ -1487,7 +1489,8 @@ Comparing: Kapiva [k] -> Kerala Ayurveda [k]
 Comparing: Kerala Ayurveda [k] -> Khaddi Natural [k]
 Comparing: Khaddi Natural [k] -> Krishna Ayurveda [k]
 Comparing: Krishna Ayurveda [k] -> Lumens [l]
-Comparing: Lumens [l] -> Muscleblaze [m]
+Comparing: Lumens [l] -> Me+ Daily Routine Planner [m]
+Comparing: Me+ Daily Routine Planner [m] -> Muscleblaze [m]
 Comparing: Muscleblaze [m] -> Muscletech [m]
 Comparing: Muscletech [m] -> Neuherbs [n]
 Comparing: Neuherbs [n] -> NuLeaf Naturals CBD [n]
@@ -1507,7 +1510,7 @@ Comparing: The Gut Co [t] -> TrueBasics [t]
 Comparing: TrueBasics [t] -> Wellbeing Nutrition [w]
 Comparing: Wellbeing Nutrition [w] -> Wellbeing Nutrition IN [w]
 Comparing: Wellbeing Nutrition IN [w] -> Zanducare [z]
-A-Z sort validation PASSED for 39 campaigns
+A-Z sort validation PASSED for 40 campaigns
 Comparing: Agaro [a] -> Amazon India [a]
 Comparing: Amazon India [a] -> DHgate [d]
 Comparing: DHgate [d] -> Dyson [d]
@@ -1528,9 +1531,51 @@ Comparing: Tintbox [t] -> Wonderchef [w]
 A-Z sort validation PASSED for 18 campaigns
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCountryFilterCampaignsTest_004" classname="tests.HomePageTests" time="6.992">
+  <testcase name="VerifyCountryFilterCampaignsTest_004" classname="tests.HomePageTests" time="7.349">
     <system-out><![CDATA[Opening Cashback Home Page
 US Exclusive Campaign Found : Alibaba Test Passed
+]]></system-out>
+  </testcase>
+  <testcase name="validateClicksTab" classname="tests.TotalEarningsTests" time="2.22">
+    <system-out><![CDATA[Browser Closed
+Browser launched
+Opening Cashback Home Page
+]]></system-out>
+  </testcase>
+  <testcase name="validateConfirmedCashbackAmount" classname="tests.TotalEarningsTests" time="2.145">
+    <system-out><![CDATA[Opening Cashback Home Page
+Calculated Confirmed Cashback = 1.78
+My Earnings = 1.78
+]]></system-out>
+  </testcase>
+  <testcase name="validatePendingCashbackAmount" classname="tests.TotalEarningsTests" time="2.094">
+    <system-out><![CDATA[Opening Cashback Home Page
+Total Pending Cashback Amount = 0.0
+Calculated Sum = 0.0
+Pending Payments UI = 0.0
+]]></system-out>
+  </testcase>
+  <testcase name="validateRedeemRedirectBasedOnMyEarnings" classname="tests.TotalEarningsTests" time="1.152">
+    <system-out><![CDATA[Opening Cashback Home Page
+My Earnings = 1.78
+Rewards URL = https://q.santabrowser.com/?tab=rewards
+Rewards page validation passed
+]]></system-out>
+  </testcase>
+  <testcase name="validate_TotalEarnings" classname="tests.TotalEarningsTests" time="0.023">
+    <system-out><![CDATA[Opening Cashback Home Page
+Pending Payments + My Earnings = 1.78
+Total Earnings UI = 1.78
+]]></system-out>
+  </testcase>
+  <testcase name="validateDeclinedCashbackHistory" classname="tests.TotalEarningsTests" time="3.101">
+    <system-out><![CDATA[Opening Cashback Home Page
+Declined Row 1 Cashback = $0.06
+Declined Row 2 Cashback = $1.72
+Declined Row 3 Cashback = $1.72
+Total Declined Transactions = 3
+Total Declined Cashback Amount = $3.5
+Declined cashback records available
 ]]></system-out>
   </testcase>
 </testsuite>
