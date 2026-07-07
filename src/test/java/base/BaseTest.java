@@ -15,9 +15,7 @@ public class BaseTest {
     protected BrowserContext context;
     protected Page page;
 
-    protected final String BASE_URL =
-    "https://shopping.santabrowser.com/?uuid=b8f53f9a0bf4635";
-           // "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
+    protected final String BASE_URL = "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
 
     @BeforeClass
     public void setUp() {
