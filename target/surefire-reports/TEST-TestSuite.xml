@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="204.244" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="206.453" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\DELL\Projects\cashback\target\test-classes;C:\Users\DELL\Projects\cashback\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.59.0\playwright-1.59.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.59.0\driver-1.59.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.59.0\driver-bundle-1.59.0.jar;C:\Users\DELL\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\DELL\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\DELL\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\DELL\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\DELL\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;"/>
+    <property name="java.class.path" value="C:\Users\DELL\Projects\cashback\target\test-classes;C:\Users\DELL\Projects\cashback\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.59.0\playwright-1.59.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.59.0\driver-1.59.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.59.0\driver-bundle-1.59.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\DELL\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\DELL\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\DELL\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\DELL\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609\surefirebooter-20260707142037567_3.jar C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609 2026-07-07T14-20-37_252-jvmRun1 surefire-20260707142037567_1tmp surefire_0-20260707142037567_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire2160393501717911726\surefirebooter-20260713155310563_3.jar C:\Users\DELL\AppData\Local\Temp\surefire2160393501717911726 2026-07-13T15-53-10_307-jvmRun1 surefire-20260713155310563_1tmp surefire_0-20260713155310563_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\DELL\Projects\cashback\target\test-classes;C:\Users\DELL\Projects\cashback\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\DELL\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\DELL\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\DELL\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\DELL\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\DELL\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.59.0\playwright-1.59.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.59.0\driver-1.59.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.59.0\driver-bundle-1.59.0.jar;C:\Users\DELL\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\DELL\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\DELL\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\DELL\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\DELL\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\DELL\Projects\cashback\target\test-classes;C:\Users\DELL\Projects\cashback\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.59.0\playwright-1.59.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.59.0\driver-1.59.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.59.0\driver-bundle-1.59.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\DELL\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\DELL\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\DELL\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\DELL\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\DELL\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\DELL\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\DELL\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\DELL\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\DELL\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\DELL\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\DELL\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\DELL\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\DELL\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\org\assertj\assertj-core\3.26.0\assertj-core-3.26.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\DELL\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\DELL\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\DELL\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\DELL\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\DELL\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\DELL\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\DELL\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;"/>
     <property name="allure.results.directory" value="C:\Users\DELL\Projects\cashback\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\DELL"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire7919200575015668609\surefirebooter-20260707142037567_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire2160393501717911726\surefirebooter-20260713155310563_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+10"/>
@@ -60,17 +60,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="clickonsearchresult__006" classname="tests.AllCategoriesTest" time="6.486">
-    <system-out><![CDATA[14:20:39.434 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\DELL\Projects\cashback\testng.xml"
-14:20:39.650 [main] INFO org.testng.internal.Utils -- [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+  <testcase name="clickonsearchresult__006" classname="tests.AllCategoriesTest" time="6.296">
+    <system-out><![CDATA[15:53:12.052 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "C:\Users\DELL\Projects\cashback\testng.xml"
+15:53:12.264 [main] INFO org.testng.internal.Utils -- [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
 Browser launched
 Opening Cashback Home Page
-Total campaigns collected: 538
-Selected Campaign: OVAGO
-Brand popup opened successfully for: OVAGO
+Total campaigns collected: 551
+Selected Campaign: Gitmind
+Brand popup opened successfully for: Gitmind
 ]]></system-out>
   </testcase>
-  <testcase name="verifyAZFilterTest_003" classname="tests.AllCategoriesTest" time="28.679">
+  <testcase name="verifyAZFilterTest_003" classname="tests.AllCategoriesTest" time="29.16">
     <system-out><![CDATA[Opening Cashback Home Page
 Comparing: 10Web [1] -> 12Go Asia Pte., Ltd. [1]
 Comparing: 12Go Asia Pte., Ltd. [1] -> 2Game [2]
@@ -81,8 +81,7 @@ OK: number -> letter
 Comparing: AbeBooks [a] -> Abelssoft [a]
 Comparing: Abelssoft [a] -> Academiedugout [a]
 Comparing: Academiedugout [a] -> AccorPlus [a]
-Comparing: AccorPlus [a] -> ACEBEAM Flashlight [a]
-Comparing: ACEBEAM Flashlight [a] -> Aceblend [a]
+Comparing: AccorPlus [a] -> Aceblend [a]
 Comparing: Aceblend [a] -> Acer [a]
 Comparing: Acer [a] -> Acko Bike [a]
 Comparing: Acko Bike [a] -> Acko Car Insurance [a]
@@ -96,8 +95,7 @@ Comparing: Agaro [a] -> Air Doctor [a]
 Comparing: Air Doctor [a] -> Air India [a]
 Comparing: Air India [a] -> Air India Express [a]
 Comparing: Air India Express [a] -> AirAsia Travel [a]
-Comparing: AirAsia Travel [a] -> Airhelp [a]
-Comparing: Airhelp [a] -> Airia [a]
+Comparing: AirAsia Travel [a] -> Airia [a]
 Comparing: Airia [a] -> Airpaz Global [a]
 Comparing: Airpaz Global [a] -> AirZlink eSIM Store [a]
 Comparing: AirZlink eSIM Store [a] -> AiSDR [a]
@@ -115,7 +113,8 @@ Comparing: Amofashion LTD [a] -> Amotopart Fairing Creator Recruitment [a]
 Comparing: Amotopart Fairing Creator Recruitment [a] -> Amplitude [a]
 Comparing: Amplitude [a] -> Anantara [a]
 Comparing: Anantara [a] -> Annie cloth [a]
-Comparing: Annie cloth [a] -> AOMEI [a]
+Comparing: Annie cloth [a] -> Antonioli [a]
+Comparing: Antonioli [a] -> AOMEI [a]
 Comparing: AOMEI [a] -> AOMEI & MultCloud Performance Marketing Prgm [a]
 Comparing: AOMEI & MultCloud Performance Marketing Prgm [a] -> Apollo.io [a]
 Comparing: Apollo.io [a] -> Appsbd Affiliates [a]
@@ -166,11 +165,11 @@ Comparing: CallHippo [c] -> Callrail [c]
 Comparing: Callrail [c] -> Campaigner [c]
 Comparing: Campaigner [c] -> Casetify [c]
 Comparing: Casetify [c] -> Castmagic [c]
-Comparing: Castmagic [c] -> Catalister [c]
-Comparing: Catalister [c] -> Ccleaner [c]
+Comparing: Castmagic [c] -> Ccleaner [c]
 Comparing: Ccleaner [c] -> ChicMe [c]
 Comparing: ChicMe [c] -> Choconchoc [c]
-Comparing: Choconchoc [c] -> Clean Email [c]
+Comparing: Choconchoc [c] -> clash.gg ManyGEOs [c]
+Comparing: clash.gg ManyGEOs [c] -> Clean Email [c]
 Comparing: Clean Email [c] -> ClevGuard [c]
 Comparing: ClevGuard [c] -> Clovia [c]
 Comparing: Clovia [c] -> Codashop [c]
@@ -183,7 +182,10 @@ Comparing: Coofandy [c] -> COOFANDY [c]
 Comparing: COOFANDY [c] -> Coohom Commission Program [c]
 Comparing: Coohom Commission Program [c] -> Corel [c]
 Comparing: Corel [c] -> Coursera [c]
-Comparing: Coursera [c] -> Databox [d]
+Comparing: Coursera [c] -> Coversandall [c]
+Comparing: Coversandall [c] -> Croma [c]
+Comparing: Croma [c] -> Cyber Florist [c]
+Comparing: Cyber Florist [c] -> Databox [d]
 Comparing: Databox [d] -> Deel [d]
 Comparing: Deel [d] -> Dell Consumer - India [d]
 Comparing: Dell Consumer - India [d] -> Designs.ai by Pixlr Pte Ltd [d]
@@ -192,7 +194,8 @@ Comparing: DHgate [d] -> Dhoodhvale Farms [d]
 Comparing: Dhoodhvale Farms [d] -> Difmark [d]
 Comparing: Difmark [d] -> Diginius [d]
 Comparing: Diginius [d] -> DocHub [d]
-Comparing: DocHub [d] -> Domain.com [d]
+Comparing: DocHub [d] -> Dolphin [d]
+Comparing: Dolphin [d] -> Domain.com [d]
 Comparing: Domain.com [d] -> Domain.com [d]
 Comparing: Domain.com [d] -> Dongguan HiBy Music Technology Co., Ltd. [d]
 Comparing: Dongguan HiBy Music Technology Co., Ltd. [d] -> DreamHost [d]
@@ -231,7 +234,8 @@ Comparing: Firstcry [f] -> Firstcry [f]
 Comparing: Firstcry [f] -> Flashcloud Affiliate Program [f]
 Comparing: Flashcloud Affiliate Program [f] -> FLEXTAIL [f]
 Comparing: FLEXTAIL [f] -> Flipkart [f]
-Comparing: Flipkart [f] -> Fly Fairly [f]
+Comparing: Flipkart [f] -> Floraexpress [f]
+Comparing: Floraexpress [f] -> Fly Fairly [f]
 Comparing: Fly Fairly [f] -> Fonelora [f]
 Comparing: Fonelora [f] -> FontLab Affiliate Program [f]
 Comparing: FontLab Affiliate Program [f] -> ForceDrop [f]
@@ -245,11 +249,13 @@ Comparing: G4free [g] -> g4free activewear [g]
 Comparing: g4free activewear [g] -> Gameseal [g]
 Comparing: Gameseal [g] -> Gamivo [g]
 Comparing: Gamivo [g] -> Gamivo [g]
-Comparing: Gamivo [g] -> GearUP [g]
+Comparing: Gamivo [g] -> Gamivo TopUps WW [g]
+Comparing: Gamivo TopUps WW [g] -> GearUP [g]
 Comparing: GearUP [g] -> Geekbuying [g]
 Comparing: Geekbuying [g] -> GetResponse [g]
 Comparing: GetResponse [g] -> Getscreen [g]
-Comparing: Getscreen [g] -> GharSoaps [g]
+Comparing: Getscreen [g] -> GGPick ManyGEOs [g]
+Comparing: GGPick ManyGEOs [g] -> GharSoaps [g]
 Comparing: GharSoaps [g] -> Giftmio [g]
 Comparing: Giftmio [g] -> Gitmind [g]
 Comparing: Gitmind [g] -> gitmind.com [g]
@@ -300,8 +306,7 @@ Comparing: InboxAlly [i] -> Indian Gifts Portal [i]
 Comparing: Indian Gifts Portal [i] -> Inspiration Affiliate Programme [i]
 Comparing: Inspiration Affiliate Programme [i] -> INSTAREM GLOBAL [i]
 Comparing: INSTAREM GLOBAL [i] -> Instax Fujifilm [i]
-Comparing: Instax Fujifilm [i] -> Interakt [i]
-Comparing: Interakt [i] -> International Open Academy [i]
+Comparing: Instax Fujifilm [i] -> International Open Academy [i]
 Comparing: International Open Academy [i] -> International Open Academy [i]
 Comparing: International Open Academy [i] -> Internxt [i]
 Comparing: Internxt [i] -> InVideo [i]
@@ -357,7 +362,8 @@ Comparing: lightpdf.com [l] -> Lilysilk [l]
 Comparing: Lilysilk [l] -> Lindy AI [l]
 Comparing: Lindy AI [l] -> Lingdi TechnologyCo.,Ltd [l]
 Comparing: Lingdi TechnologyCo.,Ltd [l] -> Lingualeo [l]
-Comparing: Lingualeo [l] -> Lucira Jewelry [l]
+Comparing: Lingualeo [l] -> Lovemachines Many Geos [l]
+Comparing: Lovemachines Many Geos [l] -> Lucira Jewelry [l]
 Comparing: Lucira Jewelry [l] -> LÚDERE [l]
 Comparing: LÚDERE [l] -> Lumens [l]
 Comparing: Lumens [l] -> LuvLap [l]
@@ -367,7 +373,8 @@ Comparing: MACROSOFT STORE S.R.L. [m] -> Magic Keys [m]
 Comparing: Magic Keys [m] -> Malaysia Airlines [m]
 Comparing: Malaysia Airlines [m] -> Malwarebytes [m]
 Comparing: Malwarebytes [m] -> Marcopolohotels [m]
-Comparing: Marcopolohotels [m] -> MaxLife Insurance [m]
+Comparing: Marcopolohotels [m] -> Marks and Spencer [m]
+Comparing: Marks and Spencer [m] -> MaxLife Insurance [m]
 Comparing: MaxLife Insurance [m] -> McAfee Work From Home [m]
 Comparing: McAfee Work From Home [m] -> Me+ Daily Routine Planner [m]
 Comparing: Me+ Daily Routine Planner [m] -> Megadreams Limited [m]
@@ -410,7 +417,8 @@ Comparing: Network Solutions Affiliate Program [n] -> Neuherbs [n]
 Comparing: Neuherbs [n] -> Nexo [n]
 Comparing: Nexo [n] -> Nexo [n]
 Comparing: Nexo [n] -> Niccolo Hotels [n]
-Comparing: Niccolo Hotels [n] -> Noise [n]
+Comparing: Niccolo Hotels [n] -> Nielsen Confluence TV & Mobile IN [n]
+Comparing: Nielsen Confluence TV & Mobile IN [n] -> Noise [n]
 Comparing: Noise [n] -> Nomad eSIM [n]
 Comparing: Nomad eSIM [n] -> Noracora [n]
 Comparing: Noracora [n] -> NoraCora [n]
@@ -436,8 +444,7 @@ Comparing: Pacdora [p] -> Pacdora [p]
 Comparing: Pacdora [p] -> Packedwithpurpose [p]
 Comparing: Packedwithpurpose [p] -> Padel Market [p]
 Comparing: Padel Market [p] -> Palazzo Versace Dubai [p]
-Comparing: Palazzo Versace Dubai [p] -> Palmonas [p]
-Comparing: Palmonas [p] -> Parallels [p]
+Comparing: Palazzo Versace Dubai [p] -> Parallels [p]
 Comparing: Parallels [p] -> Parallels [p]
 Comparing: Parallels [p] -> PDF Expert [p]
 Comparing: PDF Expert [p] -> Pelago [p]
@@ -464,9 +471,12 @@ Comparing: Portronics [p] -> Preply Learners [p]
 Comparing: Preply Learners [p] -> Proxy-cheap [p]
 Comparing: Proxy-cheap [p] -> Pubrio [p]
 Comparing: Pubrio [p] -> Purenutrition [p]
-Comparing: Purenutrition [p] -> PureVPN [p]
+Comparing: Purenutrition [p] -> PureNutrition IN [p]
+Comparing: PureNutrition IN [p] -> PureVPN [p]
 Comparing: PureVPN [p] -> PureVPN [p]
-Comparing: PureVPN [p] -> PYPROXY [p]
+Comparing: PureVPN [p] -> Puzzle English [p]
+Comparing: Puzzle English [p] -> Puzzle Movies [p]
+Comparing: Puzzle Movies [p] -> PYPROXY [p]
 Comparing: PYPROXY [p] -> Qatar Airways [q]
 Comparing: Qatar Airways [q] -> Qatar Airways [q]
 Comparing: Qatar Airways [q] -> Qustodio [q]
@@ -561,7 +571,8 @@ Comparing: The Derma Co [t] -> The Formal Club [t]
 Comparing: The Formal Club [t] -> The Gut Co [t]
 Comparing: The Gut Co [t] -> The Hindu [t]
 Comparing: The Hindu [t] -> The Luxury Closet [t]
-Comparing: The Luxury Closet [t] -> Thordata [t]
+Comparing: The Luxury Closet [t] -> Thenaturaltransformer [t]
+Comparing: Thenaturaltransformer [t] -> Thordata [t]
 Comparing: Thordata [t] -> Thordata Global Residential Proxy [t]
 Comparing: Thordata Global Residential Proxy [t] -> Thrillophilia [t]
 Comparing: Thrillophilia [t] -> Ticket Liquidator [t]
@@ -577,13 +588,13 @@ Comparing: TrainPal [t] -> Trainual [t]
 Comparing: Trainual [t] -> Travel Code [t]
 Comparing: Travel Code [t] -> Traveloka India [t]
 Comparing: Traveloka India [t] -> Travelstart [t]
-Comparing: Travelstart [t] -> Treble AI [t]
-Comparing: Treble AI [t] -> Trip.com [t]
+Comparing: Travelstart [t] -> Trip.com [t]
 Comparing: Trip.com [t] -> Trivago [t]
 Comparing: Trivago [t] -> Troop Messenger [t]
 Comparing: Troop Messenger [t] -> TrueBasics [t]
 Comparing: TrueBasics [t] -> TurboVPN [t]
-Comparing: TurboVPN [t] -> Tyresnmore [t]
+Comparing: TurboVPN [t] -> TutorOnline RU [t]
+Comparing: TutorOnline RU [t] -> Tyresnmore [t]
 Comparing: Tyresnmore [t] -> Udacity [u]
 Comparing: Udacity [u] -> Ugeat Hair Official [u]
 Comparing: Ugeat Hair Official [u] -> Ultahost [u]
@@ -612,7 +623,8 @@ Comparing: Voghion [v] -> VOLLYC [v]
 Comparing: VOLLYC [v] -> Voyage Eyewear [v]
 Comparing: Voyage Eyewear [v] -> Voye Global [v]
 Comparing: Voye Global [v] -> VY Jewelry [v]
-Comparing: VY Jewelry [v] -> WarGaming [w]
+Comparing: VY Jewelry [v] -> W for Woman [w]
+Comparing: W for Woman [w] -> WarGaming [w]
 Comparing: WarGaming [w] -> Webbusterz Affiliate Program [w]
 Comparing: Webbusterz Affiliate Program [w] -> Wegic [w]
 Comparing: Wegic [w] -> Wellbeing Nutrition [w]
@@ -635,34 +647,35 @@ Comparing: Youtravel.me Many GEOs [y] -> Yuplay [y]
 Comparing: Yuplay [y] -> Zanducare [z]
 Comparing: Zanducare [z] -> Zen Hotels [z]
 Comparing: Zen Hotels [z] -> Zendrop [z]
-Comparing: Zendrop [z] -> Zenzap [z]
+Comparing: Zendrop [z] -> Zenhotels WW [z]
+Comparing: Zenhotels WW [z] -> Zenzap [z]
 Skipping non-Latin script entry: Часы Молния Many GEOs
-A-Z sort validation PASSED for 565 campaigns
+A-Z sort validation PASSED for 578 campaigns
 ]]></system-out>
   </testcase>
-  <testcase name="verifyActivateCashbackReflectsInClicksTest_005" classname="tests.AllCategoriesTest" time="7.331">
+  <testcase name="verifyActivateCashbackReflectsInClicksTest_005" classname="tests.AllCategoriesTest" time="7.632">
     <system-out><![CDATA[Opening Cashback Home Page
-Brand cards found in grid: 565
-Randomly selected brand at position 466 → Packedwithpurpose
+Brand cards found in grid: 578
+Randomly selected brand at position 503 → Hatke
 New tab opened, waiting for it to finish loading...
-New tab finished loading: https://shopping.santabrowser.com/out/44352/store/44352?uuid=b8f53f9a0bf4635&appsflyer_id=&theme=light
+New tab finished loading: https://shopping.santabrowser.com/out/48982/store/48982?uuid=2da68a9dd8c5a73&appsflyer_id=&theme=light
 New tab closed
-Latest click store: Packedwithpurpose
-Verified: Activated brand 'Packedwithpurpose' matches latest click entry 'Packedwithpurpose'
+Latest click store: Hatke
+Verified: Activated brand 'Hatke' matches latest click entry 'Hatke'
 ]]></system-out>
   </testcase>
-  <testcase name="verifyCashbackFilterTest_004" classname="tests.AllCategoriesTest" time="3.412">
+  <testcase name="verifyCashbackFilterTest_004" classname="tests.AllCategoriesTest" time="3.105">
     <system-out><![CDATA[Opening Cashback Home Page
-Commission rate: 1524.18% (raw: $1,524.18)
-Commission rate: 320.88% (raw: $320.88)
+Commission rate: 1527.06% (raw: $1,527.06)
+Commission rate: 321.49% (raw: $321.49)
 Commission rate: 320.0% (raw: $320.00)
-Commission rate: 224.62% (raw: $224.62)
-Commission rate: 192.53% (raw: $192.53)
-Commission rate: 160.44% (raw: $160.44)
+Commission rate: 225.04% (raw: $225.04)
+Commission rate: 192.9% (raw: $192.90)
+Commission rate: 160.74% (raw: $160.74)
 Commission rate: 142.4% (raw: $142.40)
-Commission rate: 128.35% (raw: $128.35)
+Commission rate: 128.59% (raw: $128.59)
 Commission rate: 120.0% (raw: $120.00)
-Commission rate: 80.22% (raw: $80.22)
+Commission rate: 80.38% (raw: $80.38)
 Commission rate: 80.0% (raw: 80.00%)
 Commission rate: 80.0% (raw: 80.00%)
 Commission rate: 80.0% (raw: 80.00%)
@@ -673,9 +686,9 @@ Commission rate: 80.0% (raw: 80.00%)
 Commission rate: 79.73% (raw: $79.73)
 Commission rate: 79.73% (raw: $79.73)
 Commission rate: 68.0% (raw: 68.00%)
-Commission rate: 64.18% (raw: $64.18)
-Commission rate: 64.18% (raw: $64.18)
-Commission rate: 60.97% (raw: $60.97)
+Commission rate: 64.3% (raw: $64.30)
+Commission rate: 64.3% (raw: $64.30)
+Commission rate: 61.08% (raw: $61.08)
 Commission rate: 56.85% (raw: $56.85)
 Commission rate: 56.0% (raw: 56.00%)
 Commission rate: 56.0% (raw: 56.00%)
@@ -684,6 +697,7 @@ Commission rate: 48.0% (raw: 48.00%)
 Commission rate: 48.0% (raw: $48.00)
 Commission rate: 45.22% (raw: 45.22%)
 Commission rate: 44.2% (raw: 44.20%)
+Commission rate: 41.59% (raw: 41.59%)
 Commission rate: 40.39% (raw: $40.39)
 Commission rate: 40.0% (raw: 40.00%)
 Commission rate: 40.0% (raw: 40.00%)
@@ -705,7 +719,6 @@ Commission rate: 40.0% (raw: 40.00%)
 Commission rate: 40.0% (raw: 40.00%)
 Commission rate: 37.4% (raw: 37.40%)
 Commission rate: 36.92% (raw: 36.92%)
-Commission rate: 36.39% (raw: 36.39%)
 Commission rate: 36.0% (raw: 36.00%)
 Commission rate: 36.0% (raw: 36.00%)
 Commission rate: 36.0% (raw: 36.00%)
@@ -731,6 +744,7 @@ Commission rate: 32.0% (raw: 32.00%)
 Commission rate: 30.77% (raw: 30.77%)
 Commission rate: 30.6% (raw: 30.60%)
 Commission rate: 30.6% (raw: 30.60%)
+Commission rate: 30.24% (raw: $30.24)
 Commission rate: 28.0% (raw: 28.00%)
 Commission rate: 28.0% (raw: 28.00%)
 Commission rate: 28.0% (raw: 28.00%)
@@ -777,7 +791,7 @@ Commission rate: 24.0% (raw: $24.00)
 Commission rate: 23.8% (raw: 23.80%)
 Commission rate: 22.61% (raw: 22.61%)
 Commission rate: 22.44% (raw: $22.44)
-Commission rate: 21.95% (raw: $21.95)
+Commission rate: 21.99% (raw: $21.99)
 Commission rate: 20.94% (raw: $20.94)
 Commission rate: 20.67% (raw: 20.67%)
 Commission rate: 20.4% (raw: 20.40%)
@@ -796,7 +810,7 @@ Commission rate: 19.38% (raw: 19.38%)
 Commission rate: 19.38% (raw: 19.38%)
 Commission rate: 19.38% (raw: 19.38%)
 Commission rate: 19.38% (raw: 19.38%)
-Commission rate: 19.26% (raw: $19.26)
+Commission rate: 19.29% (raw: $19.29)
 Commission rate: 19.04% (raw: 19.04%)
 Commission rate: 19.04% (raw: 19.04%)
 Commission rate: 18.85% (raw: $18.85)
@@ -804,6 +818,7 @@ Commission rate: 18.85% (raw: $18.85)
 Commission rate: 18.36% (raw: 18.36%)
 Commission rate: 18.36% (raw: 18.36%)
 Commission rate: 18.36% (raw: 18.36%)
+Commission rate: 18.02% (raw: 18.02%)
 Commission rate: 17.68% (raw: 17.68%)
 Commission rate: 17.25% (raw: $17.25)
 Commission rate: 17.24% (raw: 17.24%)
@@ -812,11 +827,14 @@ Commission rate: 17.0% (raw: 17.00%)
 Commission rate: 17.0% (raw: 17.00%)
 Commission rate: 17.0% (raw: 17.00%)
 Commission rate: 17.0% (raw: 17.00%)
+Commission rate: 17.0% (raw: 17.00%)
+Commission rate: 16.8% (raw: 16.80%)
+Commission rate: 16.8% (raw: 16.80%)
 Commission rate: 16.8% (raw: 16.80%)
 Commission rate: 16.66% (raw: 16.66%)
 Commission rate: 16.53% (raw: 16.53%)
 Commission rate: 16.32% (raw: 16.32%)
-Commission rate: 16.05% (raw: $16.05)
+Commission rate: 16.07% (raw: $16.07)
 Commission rate: 16.0% (raw: 16.00%)
 Commission rate: 16.0% (raw: 16.00%)
 Commission rate: 16.0% (raw: 16.00%)
@@ -832,13 +850,13 @@ Commission rate: 16.0% (raw: 16.00%)
 Commission rate: 16.0% (raw: 16.00%)
 Commission rate: 16.0% (raw: 16.00%)
 Commission rate: 16.0% (raw: 16.00%)
-Commission rate: 15.64% (raw: 15.64%)
 Commission rate: 15.6% (raw: 15.60%)
 Commission rate: 15.59% (raw: 15.59%)
 Commission rate: 15.4% (raw: 15.40%)
 Commission rate: 15.34% (raw: $15.34)
 Commission rate: 15.31% (raw: 15.31%)
 Commission rate: 15.01% (raw: $15.01)
+Commission rate: 14.85% (raw: 14.85%)
 Commission rate: 14.62% (raw: 14.62%)
 Commission rate: 14.4% (raw: $14.40)
 Commission rate: 14.4% (raw: 14.40%)
@@ -846,7 +864,6 @@ Commission rate: 14.4% (raw: 14.40%)
 Commission rate: 14.28% (raw: 14.28%)
 Commission rate: 14.28% (raw: 14.28%)
 Commission rate: 14.28% (raw: 14.28%)
-Commission rate: 14.28% (raw: 14.28%)
 Commission rate: 13.6% (raw: 13.60%)
 Commission rate: 13.6% (raw: 13.60%)
 Commission rate: 13.6% (raw: 13.60%)
@@ -862,15 +879,15 @@ Commission rate: 13.6% (raw: 13.60%)
 Commission rate: 13.6% (raw: 13.60%)
 Commission rate: 13.6% (raw: 13.60%)
 Commission rate: 13.6% (raw: 13.60%)
-Commission rate: 13.6% (raw: 13.60%)
+Commission rate: 13.2% (raw: 13.20%)
 Commission rate: 12.92% (raw: 12.92%)
-Commission rate: 12.83% (raw: $12.83)
+Commission rate: 12.86% (raw: $12.86)
 Commission rate: 12.8% (raw: 12.80%)
 Commission rate: 12.24% (raw: 12.24%)
 Commission rate: 12.24% (raw: 12.24%)
 Commission rate: 12.24% (raw: 12.24%)
 Commission rate: 12.24% (raw: 12.24%)
-Commission rate: 12.19% (raw: $12.19)
+Commission rate: 12.22% (raw: $12.22)
 Commission rate: 12.0% (raw: 12.00%)
 Commission rate: 12.0% (raw: 12.00%)
 Commission rate: 12.0% (raw: 12.00%)
@@ -903,6 +920,7 @@ Commission rate: 10.88% (raw: 10.88%)
 Commission rate: 10.88% (raw: 10.88%)
 Commission rate: 10.41% (raw: 10.41%)
 Commission rate: 10.4% (raw: $10.40)
+Commission rate: 10.4% (raw: 10.40%)
 Commission rate: 10.4% (raw: 10.40%)
 Commission rate: 10.4% (raw: 10.40%)
 Commission rate: 10.34% (raw: 10.34%)
@@ -945,7 +963,7 @@ Commission rate: 8.84% (raw: 8.84%)
 Commission rate: 8.8% (raw: 8.80%)
 Commission rate: 8.7% (raw: 8.70%)
 Commission rate: 8.56% (raw: 8.56%)
-Commission rate: 8.54% (raw: $8.54)
+Commission rate: 8.55% (raw: $8.55)
 Commission rate: 8.4% (raw: 8.40%)
 Commission rate: 8.4% (raw: 8.40%)
 Commission rate: 8.4% (raw: 8.40%)
@@ -957,6 +975,7 @@ Commission rate: 8.16% (raw: 8.16%)
 Commission rate: 8.16% (raw: 8.16%)
 Commission rate: 8.16% (raw: 8.16%)
 Commission rate: 8.16% (raw: 8.16%)
+Commission rate: 8.0% (raw: 8.00%)
 Commission rate: 8.0% (raw: 8.00%)
 Commission rate: 8.0% (raw: 8.00%)
 Commission rate: 8.0% (raw: 8.00%)
@@ -998,9 +1017,7 @@ Commission rate: 7.5% (raw: $7.50)
 Commission rate: 7.2% (raw: 7.20%)
 Commission rate: 7.14% (raw: 7.14%)
 Commission rate: 7.14% (raw: 7.14%)
-Commission rate: 7.14% (raw: 7.14%)
 Commission rate: 7.0% (raw: 7.00%)
-Commission rate: 6.8% (raw: 6.80%)
 Commission rate: 6.8% (raw: 6.80%)
 Commission rate: 6.8% (raw: 6.80%)
 Commission rate: 6.8% (raw: 6.80%)
@@ -1053,8 +1070,10 @@ Commission rate: 6.12% (raw: 6.12%)
 Commission rate: 6.04% (raw: $6.04)
 Commission rate: 5.82% (raw: $5.82)
 Commission rate: 5.78% (raw: 5.78%)
+Commission rate: 5.77% (raw: 5.77%)
 Commission rate: 5.71% (raw: 5.71%)
 Commission rate: 5.7% (raw: 5.70%)
+Commission rate: 5.6% (raw: 5.60%)
 Commission rate: 5.6% (raw: 5.60%)
 Commission rate: 5.6% (raw: 5.60%)
 Commission rate: 5.6% (raw: 5.60%)
@@ -1072,6 +1091,9 @@ Commission rate: 5.17% (raw: 5.17%)
 Commission rate: 4.9% (raw: 4.90%)
 Commission rate: 4.9% (raw: $4.90)
 Commission rate: 4.9% (raw: 4.90%)
+Commission rate: 4.86% (raw: 4.86%)
+Commission rate: 4.8% (raw: 4.80%)
+Commission rate: 4.8% (raw: 4.80%)
 Commission rate: 4.8% (raw: 4.80%)
 Commission rate: 4.8% (raw: 4.80%)
 Commission rate: 4.8% (raw: 4.80%)
@@ -1109,9 +1131,11 @@ Commission rate: 4.0% (raw: 4.00%)
 Commission rate: 4.0% (raw: 4.00%)
 Commission rate: 3.92% (raw: 3.92%)
 Commission rate: 3.88% (raw: 3.88%)
+Commission rate: 3.84% (raw: 3.84%)
 Commission rate: 3.81% (raw: 3.81%)
 Commission rate: 3.81% (raw: 3.81%)
 Commission rate: 3.81% (raw: 3.81%)
+Commission rate: 3.75% (raw: 3.75%)
 Commission rate: 3.74% (raw: 3.74%)
 Commission rate: 3.6% (raw: 3.60%)
 Commission rate: 3.4% (raw: 3.40%)
@@ -1134,7 +1158,6 @@ Commission rate: 3.23% (raw: 3.23%)
 Commission rate: 3.23% (raw: 3.23%)
 Commission rate: 3.23% (raw: 3.23%)
 Commission rate: 3.23% (raw: 3.23%)
-Commission rate: 3.21% (raw: $3.21)
 Commission rate: 3.2% (raw: 3.20%)
 Commission rate: 3.14% (raw: $3.14)
 Commission rate: 3.07% (raw: 3.07%)
@@ -1150,12 +1173,12 @@ Commission rate: 2.72% (raw: 2.72%)
 Commission rate: 2.72% (raw: 2.72%)
 Commission rate: 2.72% (raw: 2.72%)
 Commission rate: 2.72% (raw: 2.72%)
+Commission rate: 2.72% (raw: 2.72%)
 Commission rate: 2.4% (raw: 2.40%)
 Commission rate: 2.4% (raw: 2.40%)
 Commission rate: 2.4% (raw: 2.40%)
 Commission rate: 2.4% (raw: 2.40%)
 Commission rate: 2.4% (raw: $2.40)
-Commission rate: 2.38% (raw: 2.38%)
 Commission rate: 2.38% (raw: 2.38%)
 Commission rate: 2.38% (raw: 2.38%)
 Commission rate: 2.38% (raw: 2.38%)
@@ -1174,6 +1197,7 @@ Commission rate: 1.7% (raw: 1.70%)
 Commission rate: 1.68% (raw: 1.68%)
 Commission rate: 1.68% (raw: 1.68%)
 Commission rate: 1.68% (raw: 1.68%)
+Commission rate: 1.68% (raw: 1.68%)
 Commission rate: 1.62% (raw: 1.62%)
 Commission rate: 1.6% (raw: 1.60%)
 Commission rate: 1.6% (raw: 1.60%)
@@ -1189,6 +1213,7 @@ Commission rate: 1.34% (raw: $1.34)
 Commission rate: 1.31% (raw: $1.31)
 Commission rate: 1.3% (raw: 1.30%)
 Commission rate: 1.22% (raw: 1.22%)
+Commission rate: 1.2% (raw: 1.20%)
 Commission rate: 1.2% (raw: $1.20)
 Commission rate: 1.19% (raw: 1.19%)
 Commission rate: 1.15% (raw: 1.15%)
@@ -1210,6 +1235,7 @@ Commission rate: 0.53% (raw: $0.53)
 Commission rate: 0.42% (raw: $0.42)
 Commission rate: 0.38% (raw: $0.38)
 Commission rate: 0.38% (raw: 0.38%)
+Commission rate: 0.37% (raw: $0.37)
 Commission rate: 0.32% (raw: $0.32)
 Commission rate: 0.31% (raw: $0.31)
 Commission rate: 0.28% (raw: $0.28)
@@ -1218,43 +1244,44 @@ Commission rate: 0.14% (raw: $0.14)
 Commission rate: 0.13% (raw: $0.13)
 Commission rate: 0.04% (raw: $0.04)
 Commission rate: 0.01% (raw: 0.01%)
-Cashback% sort validation PASSED for 565 rates
+Cashback% sort validation PASSED for 578 rates
 ]]></system-out>
   </testcase>
-  <testcase name="verifyRandomCampaignSearchTest_001" classname="tests.AllCategoriesTest" time="5.009">
+  <testcase name="verifyRandomCampaignSearchTest_001" classname="tests.AllCategoriesTest" time="5.106">
     <system-out><![CDATA[Opening Cashback Home Page
-Total campaigns collected: 538
-Selected Campaign: Ajio
+Total campaigns collected: 551
+Selected Campaign: Browse AI
 ]]></system-out>
   </testcase>
-  <testcase name="verifyRandomInvalidCampaignSearchTest_002" classname="tests.AllCategoriesTest" time="1.304">
+  <testcase name="verifyRandomInvalidCampaignSearchTest_002" classname="tests.AllCategoriesTest" time="1.265">
     <system-out><![CDATA[Opening Cashback Home Page
-Searching Invalid Campaign: invalid_store_999
+Searching Invalid Campaign: randomXYZ
 ]]></system-out>
   </testcase>
-  <testcase name="IterateCategoriesAndCheckCampaignsTest_002" classname="tests.HomePageTests" time="18.222">
+  <testcase name="IterateCategoriesAndCheckCampaignsTest_002" classname="tests.HomePageTests" time="18.305">
     <system-out><![CDATA[Browser Closed
 Browser launched
 Opening Cashback Home Page
 ]]></system-out>
   </testcase>
-  <testcase name="OpenHomePageTest_001" classname="tests.HomePageTests" time="0.005">
+  <testcase name="OpenHomePageTest_001" classname="tests.HomePageTests" time="0.01">
     <system-out><![CDATA[Opening Cashback Home Page
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCategoriesMenuTest_005" classname="tests.HomePageTests" time="3.251">
+  <testcase name="VerifyCategoriesMenuTest_005" classname="tests.HomePageTests" time="3.37">
     <system-out><![CDATA[Opening Cashback Home Page
 Categories displayed : 25
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCategoryFiltersTest_003" classname="tests.HomePageTests" time="51.846">
+  <testcase name="VerifyCategoryFiltersTest_003" classname="tests.HomePageTests" time="52.744">
     <system-out><![CDATA[Opening Cashback Home Page
 Comparing: Ajio [a] -> Ajmal Perfumes [a]
 Comparing: Ajmal Perfumes [a] -> AliExpress [a]
 Comparing: AliExpress [a] -> Amazon India [a]
 Comparing: Amazon India [a] -> Amofashion LTD [a]
 Comparing: Amofashion LTD [a] -> Annie cloth [a]
-Comparing: Annie cloth [a] -> Avidlove [a]
+Comparing: Annie cloth [a] -> Antonioli [a]
+Comparing: Antonioli [a] -> Avidlove [a]
 Comparing: Avidlove [a] -> AVIDLOVE [a]
 Comparing: AVIDLOVE [a] -> Banggood [b]
 Comparing: Banggood [b] -> Banggood [b]
@@ -1283,7 +1310,8 @@ Comparing: LePARMENTIER Paris [l] -> Levis [l]
 Comparing: Levis [l] -> Libas [l]
 Comparing: Libas [l] -> Libas [l]
 Comparing: Libas [l] -> Lilysilk [l]
-Comparing: Lilysilk [l] -> Mini Wesst [m]
+Comparing: Lilysilk [l] -> Marks and Spencer [m]
+Comparing: Marks and Spencer [m] -> Mini Wesst [m]
 Comparing: Mini Wesst [m] -> My Designation [m]
 Comparing: My Designation [m] -> Myntra [m]
 Comparing: Myntra [m] -> Nadula [n]
@@ -1308,9 +1336,10 @@ Comparing: The Formal Club [t] -> The Luxury Closet [t]
 Comparing: The Luxury Closet [t] -> Timex [t]
 Comparing: Timex [t] -> Uniqlo [u]
 Comparing: Uniqlo [u] -> Voghion [v]
-Comparing: Voghion [v] -> Wolf and Badger [w]
+Comparing: Voghion [v] -> W for Woman [w]
+Comparing: W for Woman [w] -> Wolf and Badger [w]
 Comparing: Wolf and Badger [w] -> www.tokyo-tiger.com [w]
-A-Z sort validation PASSED for 62 campaigns
+A-Z sort validation PASSED for 65 campaigns
 Comparing: All Man [a] -> Avon [a]
 Comparing: Avon [a] -> Bla Bli Blu [b]
 Comparing: Bla Bli Blu [b] -> Flipkart [f]
@@ -1346,15 +1375,18 @@ Comparing: TrueBasics [t] -> Ugeat Hair Official [u]
 Comparing: Ugeat Hair Official [u] -> UNice [u]
 Comparing: UNice [u] -> vivien Hair [v]
 A-Z sort validation PASSED for 35 campaigns
-Comparing: 2Game [2] -> Codashop [c]
+Comparing: 2Game [2] -> clash.gg ManyGEOs [c]
 OK: number -> letter
+Comparing: clash.gg ManyGEOs [c] -> Codashop [c]
 Comparing: Codashop [c] -> Difmark [d]
 Comparing: Difmark [d] -> ForceDrop [f]
 Comparing: ForceDrop [f] -> Gameseal [g]
 Comparing: Gameseal [g] -> Gamivo [g]
 Comparing: Gamivo [g] -> Gamivo [g]
-Comparing: Gamivo [g] -> GearUP [g]
-Comparing: GearUP [g] -> GOG WW [g]
+Comparing: Gamivo [g] -> Gamivo TopUps WW [g]
+Comparing: Gamivo TopUps WW [g] -> GearUP [g]
+Comparing: GearUP [g] -> GGPick ManyGEOs [g]
+Comparing: GGPick ManyGEOs [g] -> GOG WW [g]
 Comparing: GOG WW [g] -> K4G [k]
 Comparing: K4G [k] -> Kinguin [k]
 Comparing: Kinguin [k] -> Redmagic [r]
@@ -1365,7 +1397,7 @@ Comparing: Sorare [s] -> Unipin [u]
 Comparing: Unipin [u] -> WarGaming [w]
 Comparing: WarGaming [w] -> World of Warships. Desktop Gaming offer [w]
 Comparing: World of Warships. Desktop Gaming offer [w] -> Yuplay [y]
-A-Z sort validation PASSED for 19 campaigns
+A-Z sort validation PASSED for 22 campaigns
 Comparing: Academiedugout [a] -> Beelivery [b]
 Comparing: Beelivery [b] -> Better Nutrition [b]
 Comparing: Better Nutrition [b] -> byFood [b]
@@ -1383,7 +1415,6 @@ Comparing: Packedwithpurpose [p] -> Piquelife [p]
 Comparing: Piquelife [p] -> Pongcheese [p]
 Comparing: Pongcheese [p] -> Purenutrition [p]
 A-Z sort validation PASSED for 17 campaigns
-Comparing: ACEBEAM Flashlight [a] -> Acer [a]
 Comparing: Acer [a] -> AliExpress [a]
 Comparing: AliExpress [a] -> Amazon India [a]
 Comparing: Amazon India [a] -> ArkThinker [a]
@@ -1394,7 +1425,8 @@ Comparing: Banggood [b] -> Bee-link [b]
 Comparing: Bee-link [b] -> Boat [b]
 Comparing: Boat [b] -> BOYA [b]
 Comparing: BOYA [b] -> ControlZ World IN [c]
-Comparing: ControlZ World IN [c] -> Dell Consumer - India [d]
+Comparing: ControlZ World IN [c] -> Croma [c]
+Comparing: Croma [c] -> Dell Consumer - India [d]
 Comparing: Dell Consumer - India [d] -> Dongguan HiBy Music Technology Co., Ltd. [d]
 Comparing: Dongguan HiBy Music Technology Co., Ltd. [d] -> Dyson [d]
 Comparing: Dyson [d] -> Esd Codes [e]
@@ -1428,8 +1460,7 @@ A-Z sort validation PASSED for 42 campaigns
 Comparing: 12Go Asia Pte., Ltd. [1] -> Air India Express [a]
 OK: number -> letter
 Comparing: Air India Express [a] -> AirAsia Travel [a]
-Comparing: AirAsia Travel [a] -> Airhelp [a]
-Comparing: Airhelp [a] -> Airpaz Global [a]
+Comparing: AirAsia Travel [a] -> Airpaz Global [a]
 Comparing: Airpaz Global [a] -> AirZlink eSIM Store [a]
 Comparing: AirZlink eSIM Store [a] -> Anantara [a]
 Comparing: Anantara [a] -> Aviasales WW [a]
@@ -1470,6 +1501,7 @@ Comparing: Travelstart [t] -> Trip.com [t]
 Comparing: Trip.com [t] -> USim [u]
 Comparing: USim [u] -> Viagogo [v]
 Comparing: Viagogo [v] -> Youtravel.me Many GEOs [y]
+Comparing: Youtravel.me Many GEOs [y] -> Zenhotels WW [z]
 A-Z sort validation PASSED for 45 campaigns
 Comparing: Air Doctor [a] -> Amazon India [a]
 Comparing: Amazon India [a] -> Avni Wellness [a]
@@ -1488,7 +1520,8 @@ Comparing: Kama Ayurveda [k] -> Kapiva [k]
 Comparing: Kapiva [k] -> Kerala Ayurveda [k]
 Comparing: Kerala Ayurveda [k] -> Khaddi Natural [k]
 Comparing: Khaddi Natural [k] -> Krishna Ayurveda [k]
-Comparing: Krishna Ayurveda [k] -> Lumens [l]
+Comparing: Krishna Ayurveda [k] -> Lovemachines Many Geos [l]
+Comparing: Lovemachines Many Geos [l] -> Lumens [l]
 Comparing: Lumens [l] -> Me+ Daily Routine Planner [m]
 Comparing: Me+ Daily Routine Planner [m] -> Muscleblaze [m]
 Comparing: Muscleblaze [m] -> Muscletech [m]
@@ -1506,13 +1539,15 @@ Comparing: Steadfast Nutrition [s] -> Swisse [s]
 Comparing: Swisse [s] -> TATA AIG Health [t]
 Comparing: TATA AIG Health [t] -> The Derma Co [t]
 Comparing: The Derma Co [t] -> The Gut Co [t]
-Comparing: The Gut Co [t] -> TrueBasics [t]
+Comparing: The Gut Co [t] -> Thenaturaltransformer [t]
+Comparing: Thenaturaltransformer [t] -> TrueBasics [t]
 Comparing: TrueBasics [t] -> Wellbeing Nutrition [w]
 Comparing: Wellbeing Nutrition [w] -> Wellbeing Nutrition IN [w]
 Comparing: Wellbeing Nutrition IN [w] -> Zanducare [z]
-A-Z sort validation PASSED for 40 campaigns
+A-Z sort validation PASSED for 42 campaigns
 Comparing: Agaro [a] -> Amazon India [a]
-Comparing: Amazon India [a] -> DHgate [d]
+Comparing: Amazon India [a] -> Coversandall [c]
+Comparing: Coversandall [c] -> DHgate [d]
 Comparing: DHgate [d] -> Dyson [d]
 Comparing: Dyson [d] -> FLEXTAIL [f]
 Comparing: FLEXTAIL [f] -> Godrej Interio [g]
@@ -1528,54 +1563,56 @@ Comparing: Planner5d [p] -> Smartwings [s]
 Comparing: Smartwings [s] -> Solara [s]
 Comparing: Solara [s] -> Tintbox [t]
 Comparing: Tintbox [t] -> Wonderchef [w]
-A-Z sort validation PASSED for 18 campaigns
+A-Z sort validation PASSED for 19 campaigns
 ]]></system-out>
   </testcase>
-  <testcase name="VerifyCountryFilterCampaignsTest_004" classname="tests.HomePageTests" time="7.349">
+  <testcase name="VerifyCountryFilterCampaignsTest_004" classname="tests.HomePageTests" time="7.151">
     <system-out><![CDATA[Opening Cashback Home Page
 US Exclusive Campaign Found : Alibaba Test Passed
 ]]></system-out>
   </testcase>
-  <testcase name="validateClicksTab" classname="tests.TotalEarningsTests" time="2.22">
+  <testcase name="validateClicksTab" classname="tests.TotalEarningsTests" time="2.217">
     <system-out><![CDATA[Browser Closed
 Browser launched
 Opening Cashback Home Page
 ]]></system-out>
   </testcase>
-  <testcase name="validateConfirmedCashbackAmount" classname="tests.TotalEarningsTests" time="2.145">
+  <testcase name="validateConfirmedCashbackAmount" classname="tests.TotalEarningsTests" time="3.296">
     <system-out><![CDATA[Opening Cashback Home Page
-Calculated Confirmed Cashback = 1.78
-My Earnings = 1.78
+Calculated Confirmed Cashback = 14.44
+My Earnings = 14.44
 ]]></system-out>
   </testcase>
-  <testcase name="validatePendingCashbackAmount" classname="tests.TotalEarningsTests" time="2.094">
+  <testcase name="validateDeclinedCashbackHistory" classname="tests.TotalEarningsTests" time="3.086">
     <system-out><![CDATA[Opening Cashback Home Page
-Total Pending Cashback Amount = 0.0
-Calculated Sum = 0.0
-Pending Payments UI = 0.0
+Total Declined Transactions = 0
+Total Declined Cashback Amount = $0.0
+No declined cashback records found
 ]]></system-out>
   </testcase>
-  <testcase name="validateRedeemRedirectBasedOnMyEarnings" classname="tests.TotalEarningsTests" time="1.152">
+  <testcase name="validatePendingCashbackAmount" classname="tests.TotalEarningsTests" time="3.198">
     <system-out><![CDATA[Opening Cashback Home Page
-My Earnings = 1.78
-Rewards URL = https://q.santabrowser.com/?tab=rewards
+Row 1 Cashback = 0.10
+Row 2 Cashback = 0.67
+Row 3 Cashback = 0.62
+Row 4 Cashback = 0.00
+Row 5 Cashback = 0.00
+Total Pending Cashback Amount = 1.3900000000000001
+Calculated Sum = 1.39
+Pending Payments UI = 1.39
+]]></system-out>
+  </testcase>
+  <testcase name="validateRedeemRedirectBasedOnMyEarnings" classname="tests.TotalEarningsTests" time="1.171">
+    <system-out><![CDATA[Opening Cashback Home Page
+My Earnings = 14.44
+Rewards URL = https://q.santabrowser.com/home
 Rewards page validation passed
 ]]></system-out>
   </testcase>
-  <testcase name="validate_TotalEarnings" classname="tests.TotalEarningsTests" time="0.023">
+  <testcase name="validate_TotalEarnings" classname="tests.TotalEarningsTests" time="0.013">
     <system-out><![CDATA[Opening Cashback Home Page
-Pending Payments + My Earnings = 1.78
-Total Earnings UI = 1.78
-]]></system-out>
-  </testcase>
-  <testcase name="validateDeclinedCashbackHistory" classname="tests.TotalEarningsTests" time="3.101">
-    <system-out><![CDATA[Opening Cashback Home Page
-Declined Row 1 Cashback = $0.06
-Declined Row 2 Cashback = $1.72
-Declined Row 3 Cashback = $1.72
-Total Declined Transactions = 3
-Total Declined Cashback Amount = $3.5
-Declined cashback records available
+Pending Payments + My Earnings = 15.83
+Total Earnings UI = 15.83
 ]]></system-out>
   </testcase>
 </testsuite>

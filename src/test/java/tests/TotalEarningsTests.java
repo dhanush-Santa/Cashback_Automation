@@ -240,12 +240,12 @@ public void validateDeclinedCashbackHistory() {
     }
 
 
-    // Validation:
-    // Tab should load successfully whether records exist or not
+
     Assert.assertTrue(
             declinedCount >= 0,
             "Declined transaction validation failed"
     );
+   
 }
 
 }

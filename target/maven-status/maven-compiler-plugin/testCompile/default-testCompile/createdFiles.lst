@@ -1,0 +1,12 @@
+base\BaseTest.class
+tests\HomePageTests.class
+tests\TotalEarningsTests.class
+api\base\BaseAPITest.class
+pages\BrandPage.class
+pages\HomePage.class
+api\models\Cashback.class
+api\tests\EarningsApiTest.class
+pages\AllCategoriesPage.class
+pages\TotalEarningsPage.class
+api\clients\EarningsClient.class
+tests\AllCategoriesTest.class

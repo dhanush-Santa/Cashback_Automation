@@ -16,6 +16,7 @@ public class BaseTest {
     protected Page page;
 
     protected final String BASE_URL = "https://shopping.santabrowser.com/?uuid=2da68a9dd8c5a73";
+   // "https://shopping.santabrowser.com/?uuid=8da91acc7b09930";
 
     @BeforeClass
     public void setUp() {
@@ -62,4 +63,9 @@ public class BaseTest {
 
         System.out.println("Browser Closed");
     }
+
+public Page getPage() {
+    return this.page;
+}
+
 }

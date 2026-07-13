@@ -30,6 +30,7 @@ public class AllCategoriesTest extends BaseTest {
         allCategories.ensureOnAllCategories();
     }
 List<String> allCampaigns;
+
     @Test
     public void verifyRandomCampaignSearchTest_001() {
 
@@ -64,6 +65,7 @@ List<String> allCampaigns;
                 "Campaign not found in search results: " + randomCampaign
         );
     }
+    
     @Test
 public void verifyRandomInvalidCampaignSearchTest_002() {
 

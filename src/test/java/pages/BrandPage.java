@@ -55,4 +55,8 @@ public class BrandPage {
                 new Page.GetByRoleOptions().setName("Activate Cashback")
         ).isVisible();
     }
+
+
+
+    
 }

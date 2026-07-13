@@ -2,240 +2,240 @@
 <testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-07T14:20:41 IST" name="Suite" finished-at="2026-07-07T14:24:02 IST" duration-ms="201461">
+  <suite started-at="2026-07-13T15:53:13 IST" name="Suite" finished-at="2026-07-13T15:56:37 IST" duration-ms="204192">
     <groups>
     </groups>
-    <test started-at="2026-07-07T14:20:41 IST" name="Test" finished-at="2026-07-07T14:24:02 IST" duration-ms="201461">
+    <test started-at="2026-07-13T15:53:13 IST" name="Test" finished-at="2026-07-13T15:56:37 IST" duration-ms="204192">
       <class name="tests.TotalEarningsTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:36 IST" name="setUp" finished-at="2026-07-07T14:23:37 IST" duration-ms="1266" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:09 IST" name="setUp" finished-at="2026-07-13T15:56:10 IST" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:37 IST" name="openCashback" finished-at="2026-07-07T14:23:39 IST" duration-ms="1478" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:10 IST" name="openCashback" finished-at="2026-07-13T15:56:11 IST" duration-ms="1478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:39 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:40 IST" duration-ms="1238" status="PASS">
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:11 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:13 IST" duration-ms="1155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validateClicksTab()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:40 IST" name="validateClicksTab" finished-at="2026-07-07T14:23:42 IST" duration-ms="2217" status="PASS">
+        <test-method signature="validateClicksTab()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:13 IST" name="validateClicksTab" finished-at="2026-07-13T15:56:15 IST" duration-ms="2215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateClicksTab -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:42 IST" name="openCashback" finished-at="2026-07-07T14:23:43 IST" duration-ms="1121" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:15 IST" name="openCashback" finished-at="2026-07-13T15:56:16 IST" duration-ms="1100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:43 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:44 IST" duration-ms="1099" status="PASS">
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:16 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:17 IST" duration-ms="1118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validateConfirmedCashbackAmount()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:44 IST" name="validateConfirmedCashbackAmount" finished-at="2026-07-07T14:23:46 IST" duration-ms="2143" status="PASS">
+        <test-method signature="validateConfirmedCashbackAmount()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:17 IST" name="validateConfirmedCashbackAmount" finished-at="2026-07-13T15:56:20 IST" duration-ms="3294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateConfirmedCashbackAmount -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:46 IST" name="openCashback" finished-at="2026-07-07T14:23:47 IST" duration-ms="1086" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:20 IST" name="openCashback" finished-at="2026-07-13T15:56:21 IST" duration-ms="1154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:47 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:49 IST" duration-ms="1105" status="PASS">
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:21 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:23 IST" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validatePendingCashbackAmount()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:49 IST" name="validatePendingCashbackAmount" finished-at="2026-07-07T14:23:51 IST" duration-ms="2091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePendingCashbackAmount -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:51 IST" name="openCashback" finished-at="2026-07-07T14:23:52 IST" duration-ms="1094" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:52 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:53 IST" duration-ms="1096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validateRedeemRedirectBasedOnMyEarnings()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:53 IST" name="validateRedeemRedirectBasedOnMyEarnings" finished-at="2026-07-07T14:23:54 IST" depends-on-methods="tests.TotalEarningsTests.validateConfirmedCashbackAmount" duration-ms="1145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateRedeemRedirectBasedOnMyEarnings -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:54 IST" name="openCashback" finished-at="2026-07-07T14:23:55 IST" duration-ms="1108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:55 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:56 IST" duration-ms="1114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validate_TotalEarnings()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:56 IST" name="validate_TotalEarnings" finished-at="2026-07-07T14:23:56 IST" depends-on-methods="tests.TotalEarningsTests.validateConfirmedCashbackAmount, tests.TotalEarningsTests.validatePendingCashbackAmount" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_TotalEarnings -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:56 IST" name="openCashback" finished-at="2026-07-07T14:23:57 IST" duration-ms="1106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:57 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-07T14:23:59 IST" duration-ms="1101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeTotalearningsPageObject -->
-        <test-method signature="validateDeclinedCashbackHistory()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:23:59 IST" name="validateDeclinedCashbackHistory" finished-at="2026-07-07T14:24:02 IST" duration-ms="3100" status="PASS">
+        <test-method signature="validateDeclinedCashbackHistory()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:23 IST" name="validateDeclinedCashbackHistory" finished-at="2026-07-13T15:56:26 IST" duration-ms="3084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDeclinedCashbackHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TotalEarningsTests@1f193686]" started-at="2026-07-07T14:24:02 IST" name="tearDown" finished-at="2026-07-07T14:24:02 IST" duration-ms="829" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:26 IST" name="openCashback" finished-at="2026-07-13T15:56:27 IST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCashback -->
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:27 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:28 IST" duration-ms="1095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTotalearningsPageObject -->
+        <test-method signature="validatePendingCashbackAmount()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:28 IST" name="validatePendingCashbackAmount" finished-at="2026-07-13T15:56:31 IST" duration-ms="3195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePendingCashbackAmount -->
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:31 IST" name="openCashback" finished-at="2026-07-13T15:56:32 IST" duration-ms="1078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCashback -->
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:32 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:33 IST" duration-ms="1095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTotalearningsPageObject -->
+        <test-method signature="validateRedeemRedirectBasedOnMyEarnings()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:33 IST" name="validateRedeemRedirectBasedOnMyEarnings" finished-at="2026-07-13T15:56:34 IST" depends-on-methods="tests.TotalEarningsTests.validateConfirmedCashbackAmount" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRedeemRedirectBasedOnMyEarnings -->
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:34 IST" name="openCashback" finished-at="2026-07-13T15:56:36 IST" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCashback -->
+        <test-method is-config="true" signature="initializeTotalearningsPageObject()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:36 IST" name="initializeTotalearningsPageObject" finished-at="2026-07-13T15:56:37 IST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTotalearningsPageObject -->
+        <test-method signature="validate_TotalEarnings()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:37 IST" name="validate_TotalEarnings" finished-at="2026-07-13T15:56:37 IST" depends-on-methods="tests.TotalEarningsTests.validateConfirmedCashbackAmount, tests.TotalEarningsTests.validatePendingCashbackAmount" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_TotalEarnings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TotalEarningsTests@44cb460e]" started-at="2026-07-13T15:56:37 IST" name="tearDown" finished-at="2026-07-13T15:56:37 IST" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TotalEarningsTests -->
       <class name="tests.AllCategoriesTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:20:41 IST" name="setUp" finished-at="2026-07-07T14:20:53 IST" duration-ms="12364" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:13 IST" name="setUp" finished-at="2026-07-13T15:53:25 IST" duration-ms="11914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:20:54 IST" name="openCashback" finished-at="2026-07-07T14:20:55 IST" duration-ms="1469" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:25 IST" name="openCashback" finished-at="2026-07-13T15:53:27 IST" duration-ms="1983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:20:56 IST" name="setup" finished-at="2026-07-07T14:20:58 IST" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:27 IST" name="setup" finished-at="2026-07-13T15:53:30 IST" duration-ms="2227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickonsearchresult__006()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:20:58 IST" name="clickonsearchresult__006" finished-at="2026-07-07T14:21:05 IST" duration-ms="6482" status="PASS">
+        <test-method signature="clickonsearchresult__006()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:30 IST" name="clickonsearchresult__006" finished-at="2026-07-13T15:53:36 IST" duration-ms="6287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonsearchresult__006 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:05 IST" name="openCashback" finished-at="2026-07-07T14:21:06 IST" duration-ms="1134" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:36 IST" name="openCashback" finished-at="2026-07-13T15:53:37 IST" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:06 IST" name="setup" finished-at="2026-07-07T14:21:08 IST" duration-ms="2163" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:37 IST" name="setup" finished-at="2026-07-13T15:53:39 IST" duration-ms="2159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAZFilterTest_003()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:08 IST" name="verifyAZFilterTest_003" finished-at="2026-07-07T14:21:37 IST" duration-ms="28678" status="PASS">
+        <test-method signature="verifyAZFilterTest_003()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:53:39 IST" name="verifyAZFilterTest_003" finished-at="2026-07-13T15:54:08 IST" duration-ms="29155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAZFilterTest_003 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:37 IST" name="openCashback" finished-at="2026-07-07T14:21:38 IST" duration-ms="1115" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:08 IST" name="openCashback" finished-at="2026-07-13T15:54:10 IST" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:38 IST" name="setup" finished-at="2026-07-07T14:21:40 IST" duration-ms="2169" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:10 IST" name="setup" finished-at="2026-07-13T15:54:12 IST" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyActivateCashbackReflectsInClicksTest_005()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:40 IST" name="verifyActivateCashbackReflectsInClicksTest_005" finished-at="2026-07-07T14:21:47 IST" duration-ms="7328" status="PASS">
+        <test-method signature="verifyActivateCashbackReflectsInClicksTest_005()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:12 IST" name="verifyActivateCashbackReflectsInClicksTest_005" finished-at="2026-07-13T15:54:19 IST" duration-ms="7630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActivateCashbackReflectsInClicksTest_005 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:47 IST" name="openCashback" finished-at="2026-07-07T14:21:48 IST" duration-ms="1078" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:19 IST" name="openCashback" finished-at="2026-07-13T15:54:20 IST" duration-ms="1105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:48 IST" name="setup" finished-at="2026-07-07T14:21:50 IST" duration-ms="2191" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:20 IST" name="setup" finished-at="2026-07-13T15:54:23 IST" duration-ms="2161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCashbackFilterTest_004()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:50 IST" name="verifyCashbackFilterTest_004" finished-at="2026-07-07T14:21:53 IST" duration-ms="2906" status="PASS">
+        <test-method signature="verifyCashbackFilterTest_004()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:23 IST" name="verifyCashbackFilterTest_004" finished-at="2026-07-13T15:54:25 IST" duration-ms="2811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCashbackFilterTest_004 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:53 IST" name="openCashback" finished-at="2026-07-07T14:21:55 IST" duration-ms="1145" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:25 IST" name="openCashback" finished-at="2026-07-13T15:54:27 IST" duration-ms="1148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:55 IST" name="setup" finished-at="2026-07-07T14:21:57 IST" duration-ms="2146" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:27 IST" name="setup" finished-at="2026-07-13T15:54:29 IST" duration-ms="2178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRandomCampaignSearchTest_001()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:21:57 IST" name="verifyRandomCampaignSearchTest_001" finished-at="2026-07-07T14:22:02 IST" duration-ms="5006" status="PASS">
+        <test-method signature="verifyRandomCampaignSearchTest_001()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:29 IST" name="verifyRandomCampaignSearchTest_001" finished-at="2026-07-13T15:54:34 IST" duration-ms="5106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRandomCampaignSearchTest_001 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:22:02 IST" name="openCashback" finished-at="2026-07-07T14:22:03 IST" duration-ms="1109" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:34 IST" name="openCashback" finished-at="2026-07-13T15:54:35 IST" duration-ms="1100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:22:03 IST" name="setup" finished-at="2026-07-07T14:22:05 IST" duration-ms="2141" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:35 IST" name="setup" finished-at="2026-07-13T15:54:37 IST" duration-ms="2149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRandomInvalidCampaignSearchTest_002()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:22:05 IST" name="verifyRandomInvalidCampaignSearchTest_002" finished-at="2026-07-07T14:22:06 IST" duration-ms="1300" status="PASS">
+        <test-method signature="verifyRandomInvalidCampaignSearchTest_002()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:37 IST" name="verifyRandomInvalidCampaignSearchTest_002" finished-at="2026-07-13T15:54:38 IST" duration-ms="1254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRandomInvalidCampaignSearchTest_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AllCategoriesTest@29a4f594]" started-at="2026-07-07T14:22:06 IST" name="tearDown" finished-at="2026-07-07T14:22:07 IST" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AllCategoriesTest@5fb7183b]" started-at="2026-07-13T15:54:38 IST" name="tearDown" finished-at="2026-07-13T15:54:39 IST" duration-ms="675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.AllCategoriesTest -->
       <class name="tests.HomePageTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:07 IST" name="setUp" finished-at="2026-07-07T14:22:08 IST" duration-ms="1226" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:54:39 IST" name="setUp" finished-at="2026-07-13T15:54:40 IST" duration-ms="1194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:08 IST" name="openCashback" finished-at="2026-07-07T14:22:09 IST" duration-ms="1359" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:54:40 IST" name="openCashback" finished-at="2026-07-13T15:54:42 IST" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:09 IST" name="initializePageObject" finished-at="2026-07-07T14:22:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:54:42 IST" name="initializePageObject" finished-at="2026-07-13T15:54:42 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePageObject -->
-        <test-method signature="IterateCategoriesAndCheckCampaignsTest_002()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:09 IST" name="IterateCategoriesAndCheckCampaignsTest_002" finished-at="2026-07-07T14:22:28 IST" duration-ms="18221" status="PASS">
+        <test-method signature="IterateCategoriesAndCheckCampaignsTest_002()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:54:42 IST" name="IterateCategoriesAndCheckCampaignsTest_002" finished-at="2026-07-13T15:55:00 IST" duration-ms="18304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IterateCategoriesAndCheckCampaignsTest_002 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:28 IST" name="openCashback" finished-at="2026-07-07T14:22:29 IST" duration-ms="1076" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:00 IST" name="openCashback" finished-at="2026-07-13T15:55:01 IST" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:29 IST" name="initializePageObject" finished-at="2026-07-07T14:22:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:01 IST" name="initializePageObject" finished-at="2026-07-13T15:55:01 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePageObject -->
-        <test-method signature="OpenHomePageTest_001()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:29 IST" name="OpenHomePageTest_001" finished-at="2026-07-07T14:22:29 IST" duration-ms="5" status="PASS">
+        <test-method signature="OpenHomePageTest_001()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:01 IST" name="OpenHomePageTest_001" finished-at="2026-07-13T15:55:01 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenHomePageTest_001 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:29 IST" name="openCashback" finished-at="2026-07-07T14:22:30 IST" duration-ms="1085" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:01 IST" name="openCashback" finished-at="2026-07-13T15:55:02 IST" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method signature="VerifyCategoriesMenuTest_005()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:30 IST" name="VerifyCategoriesMenuTest_005" finished-at="2026-07-07T14:22:33 IST" duration-ms="3251" status="PASS">
+        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:02 IST" name="initializePageObject" finished-at="2026-07-13T15:55:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePageObject -->
+        <test-method signature="VerifyCategoriesMenuTest_005()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:02 IST" name="VerifyCategoriesMenuTest_005" finished-at="2026-07-13T15:55:06 IST" duration-ms="3368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCategoriesMenuTest_005 -->
-        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:30 IST" name="initializePageObject" finished-at="2026-07-07T14:22:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePageObject -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:33 IST" name="openCashback" finished-at="2026-07-07T14:22:34 IST" duration-ms="1073" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:06 IST" name="openCashback" finished-at="2026-07-13T15:55:07 IST" duration-ms="1074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:34 IST" name="initializePageObject" finished-at="2026-07-07T14:22:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:07 IST" name="initializePageObject" finished-at="2026-07-13T15:55:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePageObject -->
-        <test-method signature="VerifyCategoryFiltersTest_003()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:22:34 IST" name="VerifyCategoryFiltersTest_003" finished-at="2026-07-07T14:23:26 IST" duration-ms="51837" status="PASS">
+        <test-method signature="VerifyCategoryFiltersTest_003()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:07 IST" name="VerifyCategoryFiltersTest_003" finished-at="2026-07-13T15:55:59 IST" duration-ms="52740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCategoryFiltersTest_003 -->
-        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:23:26 IST" name="openCashback" finished-at="2026-07-07T14:23:27 IST" duration-ms="1093" status="PASS">
+        <test-method is-config="true" signature="openCashback()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:55:59 IST" name="openCashback" finished-at="2026-07-13T15:56:01 IST" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCashback -->
-        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:23:27 IST" name="initializePageObject" finished-at="2026-07-07T14:23:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializePageObject()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:56:01 IST" name="initializePageObject" finished-at="2026-07-13T15:56:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePageObject -->
-        <test-method signature="VerifyCountryFilterCampaignsTest_004()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:23:27 IST" name="VerifyCountryFilterCampaignsTest_004" finished-at="2026-07-07T14:23:34 IST" duration-ms="7341" status="PASS">
+        <test-method signature="VerifyCountryFilterCampaignsTest_004()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:56:01 IST" name="VerifyCountryFilterCampaignsTest_004" finished-at="2026-07-13T15:56:08 IST" duration-ms="7148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCountryFilterCampaignsTest_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@6818d900]" started-at="2026-07-07T14:23:34 IST" name="tearDown" finished-at="2026-07-07T14:23:36 IST" duration-ms="1329" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@287f7811]" started-at="2026-07-13T15:56:08 IST" name="tearDown" finished-at="2026-07-13T15:56:09 IST" duration-ms="979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
