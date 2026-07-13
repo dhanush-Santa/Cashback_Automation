@@ -7,12 +7,13 @@
 
     <test name="Test">
         <classes>
+          <class name="api.tests.EarningsApiTest"/>
             <class name="tests.AllCategoriesTest"/>
             <class name="tests.HomePageTests"/>
             <class name="tests.TotalEarningsTests"/>
+          
         </classes>
     </test>
 </suite>
 
-<!-- 
-mvn test -DsuiteXmlFile=testng.xml -->
+<!-- mvn test -DsuiteXmlFile=testng.xml -->

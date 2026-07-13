@@ -1,0 +1,57 @@
+# =========================
+# Maven Build
+# =========================
+target/
+*.class
+
+# =========================
+# Test Reports
+# =========================
+allure-results/
+allure-report/
+surefire-reports/
+test-output/
+
+# =========================
+# Allure CLI
+# =========================
+.allure/
+
+# =========================
+# IDE Files
+# =========================
+.idea/
+*.iml
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+*.key
+*.pem
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Automation Generated Files
+# =========================
+screenshots/
+videos/
+downloads/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini

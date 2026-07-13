@@ -1,5 +1,6 @@
 package tests;
 
+import api.utils.EarningsDataStore;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -14,6 +15,7 @@ public class TotalEarningsTests extends BaseTest {
     Double Totalearnings;
     Double My_Earnings;
     Double Pending_Payments;
+    Double Declined_Amount;
 
   @BeforeMethod
   public void initializeTotalearningsPageObject()
@@ -21,7 +23,7 @@ public class TotalEarningsTests extends BaseTest {
    totalEarningsPage=new TotalEarningsPage(page);
    totalEarningsPage.clickTotalEarnings();
   }
-    
+
 
 @Test
 public void validateClicksTab() {
@@ -37,7 +39,7 @@ public void validateClicksTab() {
             "History table scrolling is not working");
 }
 
-@Test
+@Test(groups="ui")
 public void validatePendingCashbackAmount() {
 
 
@@ -71,6 +73,7 @@ public void validatePendingCashbackAmount() {
     );
 
 Pending_Payments=calculatedAmount;
+EarningsDataStore.uiPendingPayments = calculatedAmount;
     Assert.assertEquals(
             calculatedAmount,
             pendingPaymentsAmount,
@@ -79,7 +82,7 @@ Pending_Payments=calculatedAmount;
 
 }
 
-@Test
+@Test(groups="ui")
 public void validateConfirmedCashbackAmount() {
 
 
@@ -104,6 +107,7 @@ public void validateConfirmedCashbackAmount() {
             + myEarnings);
 
 My_Earnings=calculatedAmount;
+EarningsDataStore.uiConfirmedEarnings = calculatedAmount;
     Assert.assertEquals(
             calculatedAmount,
             myEarnings,
@@ -126,7 +130,7 @@ public void validate_TotalEarnings() {
             Pending_Payments + My_Earnings;
 
 
-    
+
     calculatedTotal =
             Math.round(calculatedTotal * 100.0) / 100.0;
 
@@ -156,7 +160,7 @@ public void validate_TotalEarnings() {
 @Test(dependsOnMethods = "validateConfirmedCashbackAmount")
 public void validateRedeemRedirectBasedOnMyEarnings() {
 
-   
+
 
     double myEarnings =
             totalEarningsPage.getMyEarningsAmount();
@@ -199,7 +203,7 @@ public void validateRedeemRedirectBasedOnMyEarnings() {
         );
     }
 }
-@Test
+@Test(groups="ui")
 public void validateDeclinedCashbackHistory() {
 
 
@@ -212,7 +216,8 @@ public void validateDeclinedCashbackHistory() {
 
     double declinedAmount =
             totalEarningsPage.calculateDeclinedCashbackAmount();
-
+Declined_Amount = declinedAmount;
+EarningsDataStore.uiDeclinedAmount = declinedAmount;
 
     System.out.println(
             "Total Declined Transactions = "
@@ -245,7 +250,7 @@ public void validateDeclinedCashbackHistory() {
             declinedCount >= 0,
             "Declined transaction validation failed"
     );
-   
+
 }
 
 }
