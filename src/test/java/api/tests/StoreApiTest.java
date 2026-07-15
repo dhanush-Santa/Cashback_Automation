@@ -1,5 +1,6 @@
 package api.tests;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,6 +16,10 @@ import api.models.*;
 import io.restassured.response.Response;
 
 public class StoreApiTest extends BaseAPITest {
+
+    private static final Set<String> ALLOWED_AMOUNT_TYPES = new HashSet<>(Arrays.asList("fixed", "percent"));
+    private static final Set<String> ALLOWED_RATE_TYPES = new HashSet<>(Arrays.asList("upto", "flat"));
+    private static final Set<Integer> ALLOWED_CASHBACK_ENABLED = new HashSet<>(Arrays.asList(0, 1));
 
     @Test
     public void testGetStoreDetails() {
@@ -47,6 +52,7 @@ public class StoreApiTest extends BaseAPITest {
         SoftAssert softAssert = new SoftAssert();
         int missingLogoCount = 0;
         int missingDomainCount = 0;
+        int cashbackDisabledCount = 0;
         Set<Integer> seenIds = new HashSet<>();
         Set<Integer> duplicateIds = new TreeSet<>();
 
@@ -81,15 +87,40 @@ public class StoreApiTest extends BaseAPITest {
                         label + "homepage is not a valid URL: " + store.getHomepage());
             }
 
-            if (store.getCashbackEnabled() != null && store.getCashbackEnabled() == 1) {
-                softAssert.assertTrue(isNotBlank(store.getCashbackAmount()),
-                        label + "cashback_enabled=1 but cashback_amount is blank");
+            // cashback_enabled - mandatory, must be exactly 0 or 1
+            softAssert.assertNotNull(store.getCashbackEnabled(), label + "cashback_enabled is missing (null)");
+            if (store.getCashbackEnabled() != null) {
+                softAssert.assertTrue(ALLOWED_CASHBACK_ENABLED.contains(store.getCashbackEnabled()),
+                        label + "cashback_enabled should be 0 or 1, was: " + store.getCashbackEnabled());
+                if (store.getCashbackEnabled() == 0) {
+                    cashbackDisabledCount++;
+                    System.out.println("[INFO] " + label + "cashback_enabled=0");
+                }
             }
 
-            // Mandatory fields regardless of cashback_enabled
-            softAssert.assertTrue(isNotBlank(store.getCashbackType()), label + "cashback_type is missing/blank");
+            // cashback_amount - validated independently of cashback_enabled
+            softAssert.assertTrue(isNotBlank(store.getCashbackAmount()), label + "cashback_amount is missing/blank");
+            if (isNotBlank(store.getCashbackAmount())) {
+                softAssert.assertTrue(isNumeric(store.getCashbackAmount()),
+                        label + "cashback_amount is not numeric: " + store.getCashbackAmount());
+            }
+
+            // amount_type - mandatory, must be one of: fixed, percent
             softAssert.assertTrue(isNotBlank(store.getAmountType()), label + "amount_type is missing/blank");
+            if (isNotBlank(store.getAmountType())) {
+                softAssert.assertTrue(ALLOWED_AMOUNT_TYPES.contains(store.getAmountType().toLowerCase()),
+                        label + "amount_type invalid: '" + store.getAmountType() + "' (expected fixed/percent)");
+            }
+
+            // rate_type - mandatory, must be one of: upto, flat
             softAssert.assertTrue(isNotBlank(store.getRateType()), label + "rate_type is missing/blank");
+            if (isNotBlank(store.getRateType())) {
+                softAssert.assertTrue(ALLOWED_RATE_TYPES.contains(store.getRateType().toLowerCase()),
+                        label + "rate_type invalid: '" + store.getRateType() + "' (expected upto/flat)");
+            }
+
+            // Mandatory fields with no fixed value set
+            softAssert.assertTrue(isNotBlank(store.getCashbackType()), label + "cashback_type is missing/blank");
             softAssert.assertNotNull(store.getIsClaimable(), label + "is_claimable is missing (null)");
             softAssert.assertTrue(isNotBlank(store.getCashbackString()), label + "cashback_string is missing/blank");
 
@@ -108,7 +139,8 @@ public class StoreApiTest extends BaseAPITest {
         }
 
         System.out.println("[SUMMARY] " + missingLogoCount + " store(s) missing logo, "
-                + missingDomainCount + " store(s) missing domain_name (non-blocking).");
+                + missingDomainCount + " store(s) missing domain_name, "
+                + cashbackDisabledCount + " store(s) with cashback_enabled=0 (all non-blocking).");
 
         if (!duplicateIds.isEmpty()) {
             softAssert.fail("Duplicate store id(s) found: " + duplicateIds);
@@ -119,5 +151,14 @@ public class StoreApiTest extends BaseAPITest {
 
     private boolean isNotBlank(String value) {
         return value != null && !value.trim().isEmpty();
+    }
+
+    private boolean isNumeric(String value) {
+        try {
+            Double.parseDouble(value);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 }
