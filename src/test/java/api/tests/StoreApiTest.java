@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,7 +27,7 @@ public class StoreApiTest extends BaseAPITest {
         StoreClient storeClient = new StoreClient();
 
         // ---- 1. Response-level checks ----
-        Response response = storeClient.getStoreDetails();
+        Response response = storeClient.getStoreDetails("US");
 
         Assert.assertEquals(response.getStatusCode(), 200,
                 "Expected 200 OK. Body: " + response.getBody().asString());
@@ -36,7 +37,7 @@ public class StoreApiTest extends BaseAPITest {
                 "API did not report success=1. Body: " + response.getBody().asString());
 
         // ---- 2. Deserialize + list-level checks ----
-        List<Store> stores = storeClient.getStores();
+        List<Store> stores = storeClient.getStores("US");
         System.out.println("Total stores retrieved: " + stores.size());
 
         Assert.assertNotNull(stores, "Store list was null - response shape may have changed.");
@@ -161,4 +162,22 @@ public class StoreApiTest extends BaseAPITest {
             return false;
         }
     }
+
+    @Test
+    public void compare_stores_differentcountries()
+    {
+List<Store> storesUS = new StoreClient().getStores("US");
+List<Store> storesCA = new StoreClient().getStores("IN");
+
+        Assert.assertNotEquals(storesUS.size(), storesCA.size(), "Store counts for US and IN should differ.");
+Set<Integer> usIds = storesUS.stream().map(Store::getId).collect(Collectors.toSet());
+Set<Integer> caIds = storesCA.stream().map(Store::getId).collect(Collectors.toSet());
+Assert.assertNotEquals(usIds, caIds, "Store id sets for US and IN should differ.");
+
+    }
+
+
+
+
+
 }

@@ -5,12 +5,12 @@ import static io.restassured.RestAssured.given;
 import java.util.List;
 
 import api.base.BaseAPITest;
-import api.models.Store;
+import api.models.Category;
 import io.restassured.response.Response;
 
-public class StoreClient {
+public class CategoryClient {
 
-    public Response getStoreDetails(String countryCode) {
+    public Response getCategoryDetails() {
 
         Response response =
                 given()
@@ -18,29 +18,25 @@ public class StoreClient {
                         .all()
                         .header("Authorization", BaseAPITest.getToken())
                         .header("Content-Type", "application/json")
-                        .header("country-code", countryCode)
+                        .header("country-code", "IN")
                         .when()
-                        .get("/data/stores?page=all");
+                        .get("/data/categories");
 
         return response;
-
     }
-   
 
-    public List<Store> getStores(String countryCode) {
+    public List<Category> getCategories() {
 
         Response response =
-                getStoreDetails(countryCode);
+                getCategoryDetails();
 
-
-        List<Store> stores =
+        List<Category> categories =
                 response.jsonPath()
                         .getList(
-                                "data.data",
-                                Store.class
+                                "data",
+                                Category.class
                         );
 
-
-        return stores;
+        return categories;
     }
 }
