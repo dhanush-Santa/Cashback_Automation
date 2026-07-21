@@ -4,9 +4,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import io.restassured.RestAssured;
-
-
-
 public class BaseAPITest {
 
     public static final String CLID="2da68a9dd8c5a73";
@@ -21,4 +18,7 @@ public class BaseAPITest {
      RestAssured.baseURI="https://cbapi.santabrowser.com";
     }
 
+
+
+    
 }

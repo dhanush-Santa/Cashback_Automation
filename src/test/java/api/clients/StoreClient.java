@@ -43,4 +43,22 @@ public class StoreClient {
 
         return stores;
     }
+    public Response getStoreDetailsById(String countryCode, int storeId) {
+
+        Response response =
+                given()
+                        .log()
+                        .all()
+                        .header("Authorization", BaseAPITest.getToken())
+                        .header("Content-Type", "application/json")
+                        .header("country-code", countryCode)
+                        .when()
+                        .get("/data/storeInfo/" + storeId);
+
+        return response;
+
+    }
+
+
+
 }

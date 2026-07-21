@@ -10,6 +10,8 @@
           <class name="api.tests.EarningsApiTest"/>
            <class name="api.tests.CategoriesApiTest"/>
             <class name="api.tests.StoreApiTest"/>
+             <class name="api.tests.SearchTest"/>
+
             <class name="tests.AllCategoriesTest"/>
             <class name="tests.HomePageTests"/>
             <class name="tests.TotalEarningsTests"/>

@@ -2,6 +2,7 @@ package api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.List;
 
@@ -103,8 +104,8 @@ public class Store {
     @JsonProperty("cashback_sort")
     private String cashbackSort;
 
-    @JsonProperty("similar_stores")
-    private List<Object> similarStores;
+   @JsonProperty("similar_stores")
+private JsonNode similarStores;
 
     @JsonProperty("cashback_string")
     private String cashbackString;
@@ -229,8 +230,8 @@ public class Store {
     public String getCashbackSort() { return cashbackSort; }
     public void setCashbackSort(String cashbackSort) { this.cashbackSort = cashbackSort; }
 
-    public List<Object> getSimilarStores() { return similarStores; }
-    public void setSimilarStores(List<Object> similarStores) { this.similarStores = similarStores; }
+    public JsonNode getSimilarStores() { return similarStores; }
+    public void setSimilarStores(JsonNode similarStores) { this.similarStores = similarStores; }
 
     public String getCashbackString() { return cashbackString; }
     public void setCashbackString(String cashbackString) { this.cashbackString = cashbackString; }

@@ -3,6 +3,7 @@ package api.tests;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
@@ -21,9 +22,10 @@ public class StoreApiTest extends BaseAPITest {
     private static final Set<String> ALLOWED_AMOUNT_TYPES = new HashSet<>(Arrays.asList("fixed", "percent"));
     private static final Set<String> ALLOWED_RATE_TYPES = new HashSet<>(Arrays.asList("upto", "flat"));
     private static final Set<Integer> ALLOWED_CASHBACK_ENABLED = new HashSet<>(Arrays.asList(0, 1));
+    
 
     @Test
-    public void testGetStoreDetails() {
+    public void StoreS_Details_api_validation() {
         StoreClient storeClient = new StoreClient();
 
         // ---- 1. Response-level checks ----
@@ -173,11 +175,94 @@ List<Store> storesCA = new StoreClient().getStores("IN");
 Set<Integer> usIds = storesUS.stream().map(Store::getId).collect(Collectors.toSet());
 Set<Integer> caIds = storesCA.stream().map(Store::getId).collect(Collectors.toSet());
 Assert.assertNotEquals(usIds, caIds, "Store id sets for US and IN should differ.");
-
     }
 
 
+@Test
+public void SingleStore_Details_api_validation() {
 
+    StoreClient storeClient = new StoreClient();
+
+    List<Store> stores = storeClient.getStores("IN");
+
+    List<Integer> storeIds = stores.stream()
+            .map(Store::getId)
+            .toList();
+
+    if (storeIds.isEmpty()) {
+        Assert.fail("No stores found for country IN");
+    }
+
+    Integer storeID = storeIds.get(
+            new Random().nextInt(storeIds.size()));
+
+    Response singleStoreResponse =
+            storeClient.getStoreDetailsById("IN", storeID);
+
+    Assert.assertNotNull(singleStoreResponse,
+            "Response for single store details should not be null.");
+
+    Assert.assertEquals(singleStoreResponse.getStatusCode(),
+            200,
+            "Expected 200 OK for single store details.");
+
+    Store singleStore = singleStoreResponse
+            .jsonPath()
+            .getObject("data.store", Store.class);
+
+    Assert.assertNotNull(singleStore,
+            "Single store object should not be null.");
+
+    Assert.assertEquals(singleStore.getId(),
+            storeID,
+            "Store ID in response does not match requested ID.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getName()),
+            "Single store name should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getSlug()),
+            "Single store slug should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getAbout()),
+            "Single store about should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getHomepage()),
+            "Single store homepage should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getCashbackAmount()),
+            "Single store cashback amount should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getCashbackType()),
+            "Single store cashback type should not be blank.");
+
+    Assert.assertTrue(isNotBlank(singleStore.getAmountType()),
+            "Single store amount type should not be blank.");
+
+    Assert.assertNotNull(singleStore.getCashbackEnabled(),
+            "Cashback enabled should not be null.");
+
+
+
+    SoftAssert softAssert = new SoftAssert();
+
+    softAssert.assertNotNull(singleStore.getCats(),
+            "Categories should not be null.");
+
+    if (singleStore.getCats() != null) {
+        softAssert.assertFalse(singleStore.getCats().isEmpty(),
+                "Categories should not be empty.");
+    }
+
+    softAssert.assertNotNull(singleStore.getCountries(),
+            "Countries should not be null.");
+
+    if (singleStore.getCountries() != null) {
+        softAssert.assertFalse(singleStore.getCountries().isEmpty(),
+                "Countries should not be empty.");
+    }
+
+    softAssert.assertAll();
+}
 
 
 }
